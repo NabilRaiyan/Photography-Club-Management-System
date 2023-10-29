@@ -62,6 +62,18 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MarketingHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="MarketingHome.Designer.cs">
+      <DependentUpon>MarketingHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MarketingWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MarketingWindow.Designer.cs">
+      <DependentUpon>MarketingWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Attendance.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -166,6 +178,12 @@
     <Compile Include="ResourcesWindow.Designer.cs">
       <DependentUpon>ResourcesWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="MarketingHome.resx">
+      <DependentUpon>MarketingHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MarketingWindow.resx">
+      <DependentUpon>MarketingWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Attendance.resx">
       <DependentUpon>Attendance.cs</DependentUpon>
     </EmbeddedResource>

@@ -331,7 +331,7 @@
             this.attendance.BackColor = System.Drawing.Color.White;
             this.attendance.Location = new System.Drawing.Point(220, 70);
             this.attendance.Name = "attendance";
-            this.attendance.Size = new System.Drawing.Size(1080, 729);
+            this.attendance.Size = new System.Drawing.Size(1087, 729);
             this.attendance.TabIndex = 17;
             // 
             // eventsBudget
