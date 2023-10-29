@@ -16,5 +16,7 @@ namespace Photography_club_Management
         {
             InitializeComponent();
         }
+
+     
     }
 }

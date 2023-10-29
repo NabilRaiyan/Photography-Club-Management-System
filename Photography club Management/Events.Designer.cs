@@ -69,6 +69,7 @@
             this.lblEvents.Size = new System.Drawing.Size(140, 34);
             this.lblEvents.TabIndex = 2;
             this.lblEvents.Text = "Events";
+            this.lblEvents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlEvents
             // 
@@ -85,10 +86,9 @@
             // pnlBottomBorder
             // 
             this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlBottomBorder.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottomBorder.Location = new System.Drawing.Point(0, 715);
+            this.pnlBottomBorder.Location = new System.Drawing.Point(3, 715);
             this.pnlBottomBorder.Name = "pnlBottomBorder";
-            this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 14);
+            this.pnlBottomBorder.Size = new System.Drawing.Size(1077, 14);
             this.pnlBottomBorder.TabIndex = 12;
             // 
             // txtSearchEvents
@@ -106,7 +106,7 @@
             this.txtSearchEvents.Hint = "SEARCH EVENTS BY DATE";
             this.txtSearchEvents.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtSearchEvents.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearchEvents.LeadingIcon")));
-            this.txtSearchEvents.Location = new System.Drawing.Point(6, 69);
+            this.txtSearchEvents.Location = new System.Drawing.Point(3, 72);
             this.txtSearchEvents.Mask = "";
             this.txtSearchEvents.MaxLength = 32767;
             this.txtSearchEvents.MouseState = MaterialSkin.MouseState.OUT;
@@ -139,9 +139,10 @@
             this.pnlAllEvents.Controls.Add(this.panel1);
             this.pnlAllEvents.Controls.Add(this.pnlEventsHeading);
             this.pnlAllEvents.Controls.Add(this.pnlEventNews);
-            this.pnlAllEvents.Location = new System.Drawing.Point(3, 123);
+            this.pnlAllEvents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlAllEvents.Location = new System.Drawing.Point(0, 126);
             this.pnlAllEvents.Name = "pnlAllEvents";
-            this.pnlAllEvents.Size = new System.Drawing.Size(1077, 603);
+            this.pnlAllEvents.Size = new System.Drawing.Size(1080, 603);
             this.pnlAllEvents.TabIndex = 11;
             // 
             // panel1
@@ -240,7 +241,7 @@
             this.pnlEventsHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEventsHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlEventsHeading.Name = "pnlEventsHeading";
-            this.pnlEventsHeading.Size = new System.Drawing.Size(1077, 37);
+            this.pnlEventsHeading.Size = new System.Drawing.Size(1080, 37);
             this.pnlEventsHeading.TabIndex = 3;
             // 
             // lblEventOrganizerId

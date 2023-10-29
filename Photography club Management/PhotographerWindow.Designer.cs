@@ -30,9 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhotographerWindow));
             this.pnlPhotographerWindow = new System.Windows.Forms.Panel();
-            this.photographerHome = new Photography_club_Management.PhotographerHome();
             this.pnlBottomBorder = new System.Windows.Forms.Panel();
-            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.btnPaySlip = new FontAwesome.Sharp.IconButton();
             this.btnNotifications = new FontAwesome.Sharp.IconButton();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
@@ -47,6 +45,10 @@
             this.pnlProfile = new System.Windows.Forms.Panel();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
+            this.photographerGallery = new Photography_club_Management.PhotographerGallery();
+            this.eventsWindows = new Photography_club_Management.EventsWindows();
+            this.photographerHome = new Photography_club_Management.PhotographerHome();
+            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.pnlPhotographerWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -56,6 +58,8 @@
             // 
             // pnlPhotographerWindow
             // 
+            this.pnlPhotographerWindow.Controls.Add(this.photographerGallery);
+            this.pnlPhotographerWindow.Controls.Add(this.eventsWindows);
             this.pnlPhotographerWindow.Controls.Add(this.photographerHome);
             this.pnlPhotographerWindow.Controls.Add(this.pnlBottomBorder);
             this.pnlPhotographerWindow.Controls.Add(this.notificationsWindow);
@@ -71,15 +75,6 @@
             this.pnlPhotographerWindow.Size = new System.Drawing.Size(1300, 821);
             this.pnlPhotographerWindow.TabIndex = 0;
             // 
-            // photographerHome
-            // 
-            this.photographerHome.BackColor = System.Drawing.Color.White;
-            this.photographerHome.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.photographerHome.Location = new System.Drawing.Point(220, 70);
-            this.photographerHome.Name = "photographerHome";
-            this.photographerHome.Size = new System.Drawing.Size(1080, 735);
-            this.photographerHome.TabIndex = 14;
-            // 
             // pnlBottomBorder
             // 
             this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
@@ -88,14 +83,6 @@
             this.pnlBottomBorder.Name = "pnlBottomBorder";
             this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 16);
             this.pnlBottomBorder.TabIndex = 13;
-            // 
-            // notificationsWindow
-            // 
-            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
-            this.notificationsWindow.Location = new System.Drawing.Point(670, 91);
-            this.notificationsWindow.Name = "notificationsWindow";
-            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
-            this.notificationsWindow.TabIndex = 12;
             // 
             // btnPaySlip
             // 
@@ -211,7 +198,7 @@
             // pnlActiveMenu
             // 
             this.pnlActiveMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
-            this.pnlActiveMenu.Location = new System.Drawing.Point(0, 131);
+            this.pnlActiveMenu.Location = new System.Drawing.Point(0, 188);
             this.pnlActiveMenu.Name = "pnlActiveMenu";
             this.pnlActiveMenu.Size = new System.Drawing.Size(10, 40);
             this.pnlActiveMenu.TabIndex = 7;
@@ -228,7 +215,7 @@
             this.btnEvents.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnEvents.IconSize = 32;
             this.btnEvents.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEvents.Location = new System.Drawing.Point(12, 263);
+            this.btnEvents.Location = new System.Drawing.Point(12, 320);
             this.btnEvents.Name = "btnEvents";
             this.btnEvents.Size = new System.Drawing.Size(182, 36);
             this.btnEvents.TabIndex = 4;
@@ -236,6 +223,7 @@
             this.btnEvents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEvents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEvents.UseVisualStyleBackColor = true;
+            this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
             // 
             // btnPhotographerGallery
             // 
@@ -249,7 +237,7 @@
             this.btnPhotographerGallery.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnPhotographerGallery.IconSize = 32;
             this.btnPhotographerGallery.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhotographerGallery.Location = new System.Drawing.Point(12, 197);
+            this.btnPhotographerGallery.Location = new System.Drawing.Point(12, 254);
             this.btnPhotographerGallery.Name = "btnPhotographerGallery";
             this.btnPhotographerGallery.Size = new System.Drawing.Size(182, 36);
             this.btnPhotographerGallery.TabIndex = 3;
@@ -257,6 +245,7 @@
             this.btnPhotographerGallery.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnPhotographerGallery.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPhotographerGallery.UseVisualStyleBackColor = true;
+            this.btnPhotographerGallery.Click += new System.EventHandler(this.btnPhotographerGallery_Click);
             // 
             // btnHome
             // 
@@ -270,7 +259,7 @@
             this.btnHome.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnHome.IconSize = 32;
             this.btnHome.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnHome.Location = new System.Drawing.Point(12, 131);
+            this.btnHome.Location = new System.Drawing.Point(12, 188);
             this.btnHome.Name = "btnHome";
             this.btnHome.Size = new System.Drawing.Size(182, 36);
             this.btnHome.TabIndex = 2;
@@ -311,6 +300,39 @@
             this.picBoxUser.TabIndex = 0;
             this.picBoxUser.TabStop = false;
             // 
+            // photographerGallery
+            // 
+            this.photographerGallery.BackColor = System.Drawing.Color.White;
+            this.photographerGallery.Location = new System.Drawing.Point(226, 70);
+            this.photographerGallery.Name = "photographerGallery";
+            this.photographerGallery.Size = new System.Drawing.Size(1071, 729);
+            this.photographerGallery.TabIndex = 16;
+            // 
+            // eventsWindows
+            // 
+            this.eventsWindows.BackColor = System.Drawing.Color.White;
+            this.eventsWindows.Location = new System.Drawing.Point(226, 70);
+            this.eventsWindows.Name = "eventsWindows";
+            this.eventsWindows.Size = new System.Drawing.Size(1071, 729);
+            this.eventsWindows.TabIndex = 15;
+            // 
+            // photographerHome
+            // 
+            this.photographerHome.BackColor = System.Drawing.Color.White;
+            this.photographerHome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.photographerHome.Location = new System.Drawing.Point(220, 70);
+            this.photographerHome.Name = "photographerHome";
+            this.photographerHome.Size = new System.Drawing.Size(1080, 735);
+            this.photographerHome.TabIndex = 14;
+            // 
+            // notificationsWindow
+            // 
+            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
+            this.notificationsWindow.Location = new System.Drawing.Point(670, 91);
+            this.notificationsWindow.Name = "notificationsWindow";
+            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
+            this.notificationsWindow.TabIndex = 12;
+            // 
             // PhotographerWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -349,5 +371,7 @@
         private notificationsWindow notificationsWindow;
         private System.Windows.Forms.Panel pnlBottomBorder;
         private PhotographerHome photographerHome;
+        private EventsWindows eventsWindows;
+        private PhotographerGallery photographerGallery;
     }
 }

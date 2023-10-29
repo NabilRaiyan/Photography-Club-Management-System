@@ -32,5 +32,20 @@ namespace Photography_club_Management
             pnlActiveMenu.Top = btnHome.Top;
             photographerHome.BringToFront();
         }
+
+        private void btnEvents_Click(object sender, EventArgs e)
+        {
+
+            pnlActiveMenu.Height = btnEvents.Height;
+            pnlActiveMenu.Top = btnEvents.Top;
+            eventsWindows.BringToFront();
+        }
+
+        private void btnPhotographerGallery_Click(object sender, EventArgs e)
+        {
+            pnlActiveMenu.Height = btnPhotographerGallery.Height;
+            pnlActiveMenu.Top = btnPhotographerGallery.Top;
+            photographerGallery.BringToFront();
+        }
     }
 }

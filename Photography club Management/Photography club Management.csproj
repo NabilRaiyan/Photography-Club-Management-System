@@ -68,6 +68,12 @@
     <Compile Include="Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventCoordinatorWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EventCoordinatorWindow.Designer.cs">
+      <DependentUpon>EventCoordinatorWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="Events.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -97,6 +103,12 @@
     </Compile>
     <Compile Include="notificationsWindow.Designer.cs">
       <DependentUpon>notificationsWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotographerGallery.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhotographerGallery.Designer.cs">
+      <DependentUpon>PhotographerGallery.cs</DependentUpon>
     </Compile>
     <Compile Include="PhotographerHome.cs">
       <SubType>UserControl</SubType>
@@ -133,6 +145,9 @@
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EventCoordinatorWindow.resx">
+      <DependentUpon>EventCoordinatorWindow.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Events.resx">
       <DependentUpon>Events.cs</DependentUpon>
     </EmbeddedResource>
@@ -147,6 +162,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="notificationsWindow.resx">
       <DependentUpon>notificationsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotographerGallery.resx">
+      <DependentUpon>PhotographerGallery.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhotographerHome.resx">
       <DependentUpon>PhotographerHome.cs</DependentUpon>
