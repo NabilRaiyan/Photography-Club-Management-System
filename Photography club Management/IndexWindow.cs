@@ -29,7 +29,7 @@ namespace Photography_club_Management
 
         }
 
-        private void lblPhotographerName_Click(object sender, EventArgs e)
+        private void btnLogin_Click(object sender, EventArgs e)
         {
 
         }

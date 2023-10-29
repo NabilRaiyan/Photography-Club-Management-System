@@ -297,7 +297,6 @@
             this.lblPhotographerName.TabIndex = 1;
             this.lblPhotographerName.Text = "CLICKED BY RAIYAN";
             this.lblPhotographerName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.lblPhotographerName.Click += new System.EventHandler(this.lblPhotographerName_Click);
             // 
             // lblUpcommingEvents
             // 
@@ -502,6 +501,7 @@
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogin.UseVisualStyleBackColor = false;
+            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // picBoxIndexHeading
             // 

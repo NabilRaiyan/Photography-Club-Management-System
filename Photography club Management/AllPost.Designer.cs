@@ -30,8 +30,15 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(AllPost));
             this.pnlAllPost = new System.Windows.Forms.Panel();
-            this.lblPosts = new System.Windows.Forms.Label();
+            this.txtSearchPosts = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.pnlAllEvents = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.pnlEventsHeading = new System.Windows.Forms.Panel();
             this.lblPostedByHeading = new System.Windows.Forms.Label();
             this.lblPostedToHeading = new System.Windows.Forms.Label();
@@ -45,19 +52,12 @@
             this.lblPostId = new System.Windows.Forms.Label();
             this.lblPostedTo = new System.Windows.Forms.Label();
             this.lblPostTitle = new System.Windows.Forms.Label();
-            this.txtSearchPosts = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblPosts = new System.Windows.Forms.Label();
             this.pnlAllPost.SuspendLayout();
             this.pnlAllEvents.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnlEventsHeading.SuspendLayout();
             this.pnlEventNews.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlAllPost
@@ -71,15 +71,47 @@
             this.pnlAllPost.Size = new System.Drawing.Size(1080, 729);
             this.pnlAllPost.TabIndex = 0;
             // 
-            // lblPosts
+            // txtSearchPosts
             // 
-            this.lblPosts.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosts.Location = new System.Drawing.Point(470, 12);
-            this.lblPosts.Name = "lblPosts";
-            this.lblPosts.Size = new System.Drawing.Size(140, 34);
-            this.lblPosts.TabIndex = 3;
-            this.lblPosts.Text = "Posts";
-            this.lblPosts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtSearchPosts.AllowPromptAsInput = true;
+            this.txtSearchPosts.AnimateReadOnly = false;
+            this.txtSearchPosts.AsciiOnly = false;
+            this.txtSearchPosts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtSearchPosts.BeepOnError = false;
+            this.txtSearchPosts.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtSearchPosts.Depth = 0;
+            this.txtSearchPosts.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearchPosts.HidePromptOnLeave = false;
+            this.txtSearchPosts.HideSelection = true;
+            this.txtSearchPosts.Hint = "SEARCH POSTS BY DATE";
+            this.txtSearchPosts.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtSearchPosts.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearchPosts.LeadingIcon")));
+            this.txtSearchPosts.Location = new System.Drawing.Point(3, 72);
+            this.txtSearchPosts.Mask = "";
+            this.txtSearchPosts.MaxLength = 32767;
+            this.txtSearchPosts.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtSearchPosts.Name = "txtSearchPosts";
+            this.txtSearchPosts.PasswordChar = '\0';
+            this.txtSearchPosts.PrefixSuffixText = null;
+            this.txtSearchPosts.PromptChar = '_';
+            this.txtSearchPosts.ReadOnly = false;
+            this.txtSearchPosts.RejectInputOnFirstFailure = false;
+            this.txtSearchPosts.ResetOnPrompt = true;
+            this.txtSearchPosts.ResetOnSpace = true;
+            this.txtSearchPosts.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtSearchPosts.SelectedText = "";
+            this.txtSearchPosts.SelectionLength = 0;
+            this.txtSearchPosts.SelectionStart = 0;
+            this.txtSearchPosts.ShortcutsEnabled = true;
+            this.txtSearchPosts.Size = new System.Drawing.Size(283, 48);
+            this.txtSearchPosts.SkipLiterals = true;
+            this.txtSearchPosts.TabIndex = 24;
+            this.txtSearchPosts.TabStop = false;
+            this.txtSearchPosts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtSearchPosts.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtSearchPosts.TrailingIcon = null;
+            this.txtSearchPosts.UseSystemPasswordChar = false;
+            this.txtSearchPosts.ValidatingType = null;
             // 
             // pnlAllEvents
             // 
@@ -92,6 +124,91 @@
             this.pnlAllEvents.Name = "pnlAllEvents";
             this.pnlAllEvents.Size = new System.Drawing.Size(1080, 603);
             this.pnlAllEvents.TabIndex = 12;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(3, 110);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1068, 41);
+            this.panel1.TabIndex = 11;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(466, 10);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(91, 18);
+            this.label1.TabIndex = 10;
+            this.label1.Text = "12-2-2024";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(908, 4);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(49, 28);
+            this.label2.TabIndex = 9;
+            this.label2.Text = "Mr-01";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.White;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.Location = new System.Drawing.Point(1022, 5);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(30, 28);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(64, 10);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 18);
+            this.label3.TabIndex = 6;
+            this.label3.Text = "Ps-01";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Blue;
+            this.label4.Location = new System.Drawing.Point(666, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(126, 24);
+            this.label4.TabIndex = 2;
+            this.label4.Text = "Facebook";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label5
+            // 
+            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.Blue;
+            this.label5.Location = new System.Drawing.Point(211, 5);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(218, 28);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Photogrpahy Contest";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlEventsHeading
             // 
@@ -208,7 +325,7 @@
             this.btnDeleteMember.IconColor = System.Drawing.Color.Black;
             this.btnDeleteMember.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnDeleteMember.IconSize = 25;
-            this.btnDeleteMember.Location = new System.Drawing.Point(1033, 5);
+            this.btnDeleteMember.Location = new System.Drawing.Point(1022, 4);
             this.btnDeleteMember.Name = "btnDeleteMember";
             this.btnDeleteMember.Size = new System.Drawing.Size(30, 28);
             this.btnDeleteMember.TabIndex = 8;
@@ -247,132 +364,15 @@
             this.lblPostTitle.Text = "Photogrpahy Contest";
             this.lblPostTitle.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // txtSearchPosts
+            // lblPosts
             // 
-            this.txtSearchPosts.AllowPromptAsInput = true;
-            this.txtSearchPosts.AnimateReadOnly = false;
-            this.txtSearchPosts.AsciiOnly = false;
-            this.txtSearchPosts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.txtSearchPosts.BeepOnError = false;
-            this.txtSearchPosts.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtSearchPosts.Depth = 0;
-            this.txtSearchPosts.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtSearchPosts.HidePromptOnLeave = false;
-            this.txtSearchPosts.HideSelection = true;
-            this.txtSearchPosts.Hint = "SEARCH POSTS BY DATE";
-            this.txtSearchPosts.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
-            this.txtSearchPosts.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearchPosts.LeadingIcon")));
-            this.txtSearchPosts.Location = new System.Drawing.Point(3, 72);
-            this.txtSearchPosts.Mask = "";
-            this.txtSearchPosts.MaxLength = 32767;
-            this.txtSearchPosts.MouseState = MaterialSkin.MouseState.OUT;
-            this.txtSearchPosts.Name = "txtSearchPosts";
-            this.txtSearchPosts.PasswordChar = '\0';
-            this.txtSearchPosts.PrefixSuffixText = null;
-            this.txtSearchPosts.PromptChar = '_';
-            this.txtSearchPosts.ReadOnly = false;
-            this.txtSearchPosts.RejectInputOnFirstFailure = false;
-            this.txtSearchPosts.ResetOnPrompt = true;
-            this.txtSearchPosts.ResetOnSpace = true;
-            this.txtSearchPosts.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.txtSearchPosts.SelectedText = "";
-            this.txtSearchPosts.SelectionLength = 0;
-            this.txtSearchPosts.SelectionStart = 0;
-            this.txtSearchPosts.ShortcutsEnabled = true;
-            this.txtSearchPosts.Size = new System.Drawing.Size(283, 48);
-            this.txtSearchPosts.SkipLiterals = true;
-            this.txtSearchPosts.TabIndex = 24;
-            this.txtSearchPosts.TabStop = false;
-            this.txtSearchPosts.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
-            this.txtSearchPosts.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
-            this.txtSearchPosts.TrailingIcon = null;
-            this.txtSearchPosts.UseSystemPasswordChar = false;
-            this.txtSearchPosts.ValidatingType = null;
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.label5);
-            this.panel1.Location = new System.Drawing.Point(3, 110);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1068, 41);
-            this.panel1.TabIndex = 11;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(466, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(91, 18);
-            this.label1.TabIndex = 10;
-            this.label1.Text = "12-2-2024";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(908, 4);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(49, 28);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Mr-01";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // iconButton1
-            // 
-            this.iconButton1.BackColor = System.Drawing.Color.White;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(1033, 5);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(30, 28);
-            this.iconButton1.TabIndex = 8;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(64, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 18);
-            this.label3.TabIndex = 6;
-            this.label3.Text = "Ps-01";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(666, 10);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(126, 24);
-            this.label4.TabIndex = 2;
-            this.label4.Text = "Facebook";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.Blue;
-            this.label5.Location = new System.Drawing.Point(211, 5);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(218, 28);
-            this.label5.TabIndex = 1;
-            this.label5.Text = "Photogrpahy Contest";
-            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.lblPosts.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosts.Location = new System.Drawing.Point(470, 12);
+            this.lblPosts.Name = "lblPosts";
+            this.lblPosts.Size = new System.Drawing.Size(140, 34);
+            this.lblPosts.TabIndex = 3;
+            this.lblPosts.Text = "Posts";
+            this.lblPosts.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // AllPost
             // 
@@ -384,9 +384,9 @@
             this.Size = new System.Drawing.Size(1080, 729);
             this.pnlAllPost.ResumeLayout(false);
             this.pnlAllEvents.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.pnlEventsHeading.ResumeLayout(false);
             this.pnlEventNews.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
