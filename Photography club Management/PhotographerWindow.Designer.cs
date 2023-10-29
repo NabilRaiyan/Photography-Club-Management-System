@@ -46,9 +46,9 @@
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.photographerGallery = new Photography_club_Management.PhotographerGallery();
-            this.eventsWindows = new Photography_club_Management.EventsWindows();
             this.photographerHome = new Photography_club_Management.PhotographerHome();
             this.notificationsWindow = new Photography_club_Management.notificationsWindow();
+            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
             this.pnlPhotographerWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -58,8 +58,8 @@
             // 
             // pnlPhotographerWindow
             // 
+            this.pnlPhotographerWindow.Controls.Add(this.photographerEventsShow);
             this.pnlPhotographerWindow.Controls.Add(this.photographerGallery);
-            this.pnlPhotographerWindow.Controls.Add(this.eventsWindows);
             this.pnlPhotographerWindow.Controls.Add(this.photographerHome);
             this.pnlPhotographerWindow.Controls.Add(this.pnlBottomBorder);
             this.pnlPhotographerWindow.Controls.Add(this.notificationsWindow);
@@ -303,18 +303,10 @@
             // photographerGallery
             // 
             this.photographerGallery.BackColor = System.Drawing.Color.White;
-            this.photographerGallery.Location = new System.Drawing.Point(226, 70);
+            this.photographerGallery.Location = new System.Drawing.Point(229, 70);
             this.photographerGallery.Name = "photographerGallery";
             this.photographerGallery.Size = new System.Drawing.Size(1071, 729);
             this.photographerGallery.TabIndex = 16;
-            // 
-            // eventsWindows
-            // 
-            this.eventsWindows.BackColor = System.Drawing.Color.White;
-            this.eventsWindows.Location = new System.Drawing.Point(226, 70);
-            this.eventsWindows.Name = "eventsWindows";
-            this.eventsWindows.Size = new System.Drawing.Size(1071, 729);
-            this.eventsWindows.TabIndex = 15;
             // 
             // photographerHome
             // 
@@ -332,6 +324,14 @@
             this.notificationsWindow.Name = "notificationsWindow";
             this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
             this.notificationsWindow.TabIndex = 12;
+            // 
+            // photographerEventsShow
+            // 
+            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
+            this.photographerEventsShow.Location = new System.Drawing.Point(225, 70);
+            this.photographerEventsShow.Name = "photographerEventsShow";
+            this.photographerEventsShow.Size = new System.Drawing.Size(1072, 729);
+            this.photographerEventsShow.TabIndex = 17;
             // 
             // PhotographerWindow
             // 
@@ -371,7 +371,7 @@
         private notificationsWindow notificationsWindow;
         private System.Windows.Forms.Panel pnlBottomBorder;
         private PhotographerHome photographerHome;
-        private EventsWindows eventsWindows;
         private PhotographerGallery photographerGallery;
+        private PhotographerEventsShow photographerEventsShow;
     }
 }

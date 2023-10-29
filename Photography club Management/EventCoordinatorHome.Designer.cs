@@ -44,15 +44,29 @@
             this.lblMemberNumber = new System.Windows.Forms.Label();
             this.lblActiveMember = new System.Windows.Forms.Label();
             this.pictureBoxTotalMembers = new System.Windows.Forms.PictureBox();
+            this.pnlEventBudget = new System.Windows.Forms.Panel();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.lblEventBudget = new System.Windows.Forms.Label();
+            this.txtEventName = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.txtEventId = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.lblEventOrganizeDate = new System.Windows.Forms.Label();
+            this.dtpEventDate = new System.Windows.Forms.DateTimePicker();
+            this.txtRoadNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.cmbCity = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtHouseNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.txtEventBudget = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.btnSendEventBudget = new System.Windows.Forms.Button();
             this.pnlEventCoordinatorHome.SuspendLayout();
             this.pnlUpcommingEvents.SuspendLayout();
             this.pnlShowEvents.SuspendLayout();
             this.pnlEventNews.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTotalMembers)).BeginInit();
+            this.pnlEventBudget.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlEventCoordinatorHome
             // 
+            this.pnlEventCoordinatorHome.Controls.Add(this.pnlEventBudget);
             this.pnlEventCoordinatorHome.Controls.Add(this.lblMemberNumber);
             this.pnlEventCoordinatorHome.Controls.Add(this.lblActiveMember);
             this.pnlEventCoordinatorHome.Controls.Add(this.pictureBoxTotalMembers);
@@ -220,6 +234,297 @@
             this.pictureBoxTotalMembers.TabIndex = 8;
             this.pictureBoxTotalMembers.TabStop = false;
             // 
+            // pnlEventBudget
+            // 
+            this.pnlEventBudget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.pnlEventBudget.Controls.Add(this.btnSendEventBudget);
+            this.pnlEventBudget.Controls.Add(this.txtEventBudget);
+            this.pnlEventBudget.Controls.Add(this.txtRoadNo);
+            this.pnlEventBudget.Controls.Add(this.cmbCity);
+            this.pnlEventBudget.Controls.Add(this.txtHouseNo);
+            this.pnlEventBudget.Controls.Add(this.lblEventOrganizeDate);
+            this.pnlEventBudget.Controls.Add(this.dtpEventDate);
+            this.pnlEventBudget.Controls.Add(this.txtEventId);
+            this.pnlEventBudget.Controls.Add(this.txtEventName);
+            this.pnlEventBudget.Controls.Add(this.btnClearAll);
+            this.pnlEventBudget.Controls.Add(this.lblEventBudget);
+            this.pnlEventBudget.Location = new System.Drawing.Point(11, 55);
+            this.pnlEventBudget.Name = "pnlEventBudget";
+            this.pnlEventBudget.Size = new System.Drawing.Size(368, 654);
+            this.pnlEventBudget.TabIndex = 11;
+            // 
+            // btnClearAll
+            // 
+            this.btnClearAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.btnClearAll.FlatAppearance.BorderSize = 0;
+            this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearAll.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearAll.ForeColor = System.Drawing.Color.White;
+            this.btnClearAll.Location = new System.Drawing.Point(232, 605);
+            this.btnClearAll.Name = "btnClearAll";
+            this.btnClearAll.Size = new System.Drawing.Size(88, 32);
+            this.btnClearAll.TabIndex = 20;
+            this.btnClearAll.Text = "CLEAR ALL";
+            this.btnClearAll.UseVisualStyleBackColor = false;
+            // 
+            // lblEventBudget
+            // 
+            this.lblEventBudget.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventBudget.ForeColor = System.Drawing.Color.Navy;
+            this.lblEventBudget.Location = new System.Drawing.Point(31, 17);
+            this.lblEventBudget.Name = "lblEventBudget";
+            this.lblEventBudget.Size = new System.Drawing.Size(289, 25);
+            this.lblEventBudget.TabIndex = 7;
+            this.lblEventBudget.Text = "EVENT BUDGET";
+            this.lblEventBudget.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // txtEventName
+            // 
+            this.txtEventName.AllowPromptAsInput = true;
+            this.txtEventName.AnimateReadOnly = false;
+            this.txtEventName.AsciiOnly = false;
+            this.txtEventName.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEventName.BeepOnError = false;
+            this.txtEventName.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtEventName.Depth = 0;
+            this.txtEventName.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEventName.HidePromptOnLeave = false;
+            this.txtEventName.HideSelection = true;
+            this.txtEventName.Hint = "ENTER EVENT NAME";
+            this.txtEventName.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtEventName.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtEventName.LeadingIcon")));
+            this.txtEventName.Location = new System.Drawing.Point(35, 142);
+            this.txtEventName.Mask = "";
+            this.txtEventName.MaxLength = 32767;
+            this.txtEventName.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEventName.Name = "txtEventName";
+            this.txtEventName.PasswordChar = '\0';
+            this.txtEventName.PrefixSuffixText = null;
+            this.txtEventName.PromptChar = '_';
+            this.txtEventName.ReadOnly = false;
+            this.txtEventName.RejectInputOnFirstFailure = false;
+            this.txtEventName.ResetOnPrompt = true;
+            this.txtEventName.ResetOnSpace = true;
+            this.txtEventName.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtEventName.SelectedText = "";
+            this.txtEventName.SelectionLength = 0;
+            this.txtEventName.SelectionStart = 0;
+            this.txtEventName.ShortcutsEnabled = true;
+            this.txtEventName.Size = new System.Drawing.Size(277, 48);
+            this.txtEventName.SkipLiterals = true;
+            this.txtEventName.TabIndex = 21;
+            this.txtEventName.TabStop = false;
+            this.txtEventName.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEventName.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtEventName.TrailingIcon = null;
+            this.txtEventName.UseSystemPasswordChar = false;
+            this.txtEventName.ValidatingType = null;
+            // 
+            // txtEventId
+            // 
+            this.txtEventId.AllowPromptAsInput = true;
+            this.txtEventId.AnimateReadOnly = false;
+            this.txtEventId.AsciiOnly = false;
+            this.txtEventId.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtEventId.BeepOnError = false;
+            this.txtEventId.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtEventId.Depth = 0;
+            this.txtEventId.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtEventId.HidePromptOnLeave = false;
+            this.txtEventId.HideSelection = true;
+            this.txtEventId.Hint = "EVENT ID";
+            this.txtEventId.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtEventId.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtEventId.LeadingIcon")));
+            this.txtEventId.Location = new System.Drawing.Point(35, 75);
+            this.txtEventId.Mask = "";
+            this.txtEventId.MaxLength = 32767;
+            this.txtEventId.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtEventId.Name = "txtEventId";
+            this.txtEventId.PasswordChar = '\0';
+            this.txtEventId.PrefixSuffixText = null;
+            this.txtEventId.PromptChar = '_';
+            this.txtEventId.ReadOnly = true;
+            this.txtEventId.RejectInputOnFirstFailure = false;
+            this.txtEventId.ResetOnPrompt = true;
+            this.txtEventId.ResetOnSpace = true;
+            this.txtEventId.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtEventId.SelectedText = "";
+            this.txtEventId.SelectionLength = 0;
+            this.txtEventId.SelectionStart = 0;
+            this.txtEventId.ShortcutsEnabled = true;
+            this.txtEventId.Size = new System.Drawing.Size(277, 48);
+            this.txtEventId.SkipLiterals = true;
+            this.txtEventId.TabIndex = 22;
+            this.txtEventId.TabStop = false;
+            this.txtEventId.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtEventId.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtEventId.TrailingIcon = null;
+            this.txtEventId.UseSystemPasswordChar = false;
+            this.txtEventId.ValidatingType = null;
+            // 
+            // lblEventOrganizeDate
+            // 
+            this.lblEventOrganizeDate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventOrganizeDate.ForeColor = System.Drawing.Color.Black;
+            this.lblEventOrganizeDate.Location = new System.Drawing.Point(31, 212);
+            this.lblEventOrganizeDate.Name = "lblEventOrganizeDate";
+            this.lblEventOrganizeDate.Size = new System.Drawing.Size(109, 22);
+            this.lblEventOrganizeDate.TabIndex = 29;
+            this.lblEventOrganizeDate.Text = "EVENT DATE";
+            this.lblEventOrganizeDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtpEventDate
+            // 
+            this.dtpEventDate.CustomFormat = "";
+            this.dtpEventDate.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpEventDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpEventDate.Location = new System.Drawing.Point(172, 209);
+            this.dtpEventDate.Name = "dtpEventDate";
+            this.dtpEventDate.Size = new System.Drawing.Size(140, 30);
+            this.dtpEventDate.TabIndex = 30;
+            // 
+            // txtRoadNo
+            // 
+            this.txtRoadNo.AllowPromptAsInput = true;
+            this.txtRoadNo.AnimateReadOnly = false;
+            this.txtRoadNo.AsciiOnly = false;
+            this.txtRoadNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRoadNo.BeepOnError = false;
+            this.txtRoadNo.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtRoadNo.Depth = 0;
+            this.txtRoadNo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRoadNo.HidePromptOnLeave = false;
+            this.txtRoadNo.HideSelection = true;
+            this.txtRoadNo.Hint = "ROAD NO";
+            this.txtRoadNo.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtRoadNo.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtRoadNo.LeadingIcon")));
+            this.txtRoadNo.Location = new System.Drawing.Point(176, 258);
+            this.txtRoadNo.Mask = "";
+            this.txtRoadNo.MaxLength = 32767;
+            this.txtRoadNo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRoadNo.Name = "txtRoadNo";
+            this.txtRoadNo.PasswordChar = '\0';
+            this.txtRoadNo.PrefixSuffixText = null;
+            this.txtRoadNo.PromptChar = '_';
+            this.txtRoadNo.ReadOnly = false;
+            this.txtRoadNo.RejectInputOnFirstFailure = false;
+            this.txtRoadNo.ResetOnPrompt = true;
+            this.txtRoadNo.ResetOnSpace = true;
+            this.txtRoadNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRoadNo.SelectedText = "";
+            this.txtRoadNo.SelectionLength = 0;
+            this.txtRoadNo.SelectionStart = 0;
+            this.txtRoadNo.ShortcutsEnabled = true;
+            this.txtRoadNo.Size = new System.Drawing.Size(136, 48);
+            this.txtRoadNo.SkipLiterals = true;
+            this.txtRoadNo.TabIndex = 33;
+            this.txtRoadNo.TabStop = false;
+            this.txtRoadNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRoadNo.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtRoadNo.TrailingIcon = null;
+            this.txtRoadNo.UseSystemPasswordChar = false;
+            this.txtRoadNo.ValidatingType = null;
+            // 
+            // cmbCity
+            // 
+            this.cmbCity.AutoResize = false;
+            this.cmbCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbCity.Depth = 0;
+            this.cmbCity.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbCity.DropDownHeight = 174;
+            this.cmbCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCity.DropDownWidth = 121;
+            this.cmbCity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbCity.FormattingEnabled = true;
+            this.cmbCity.Hint = "CHOSE CITY";
+            this.cmbCity.IntegralHeight = false;
+            this.cmbCity.ItemHeight = 43;
+            this.cmbCity.Items.AddRange(new object[] {
+            "Dhaka",
+            "Narayangonj",
+            "Khulna",
+            "Rajshahi"});
+            this.cmbCity.Location = new System.Drawing.Point(35, 325);
+            this.cmbCity.MaxDropDownItems = 4;
+            this.cmbCity.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbCity.Name = "cmbCity";
+            this.cmbCity.Size = new System.Drawing.Size(277, 49);
+            this.cmbCity.StartIndex = 0;
+            this.cmbCity.TabIndex = 32;
+            // 
+            // txtHouseNo
+            // 
+            this.txtHouseNo.AllowPromptAsInput = true;
+            this.txtHouseNo.AnimateReadOnly = false;
+            this.txtHouseNo.AsciiOnly = false;
+            this.txtHouseNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtHouseNo.BeepOnError = false;
+            this.txtHouseNo.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtHouseNo.Depth = 0;
+            this.txtHouseNo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHouseNo.HidePromptOnLeave = false;
+            this.txtHouseNo.HideSelection = true;
+            this.txtHouseNo.Hint = "HOUSE NO";
+            this.txtHouseNo.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtHouseNo.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtHouseNo.LeadingIcon")));
+            this.txtHouseNo.Location = new System.Drawing.Point(35, 258);
+            this.txtHouseNo.Mask = "";
+            this.txtHouseNo.MaxLength = 32767;
+            this.txtHouseNo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHouseNo.Name = "txtHouseNo";
+            this.txtHouseNo.PasswordChar = '\0';
+            this.txtHouseNo.PrefixSuffixText = null;
+            this.txtHouseNo.PromptChar = '_';
+            this.txtHouseNo.ReadOnly = false;
+            this.txtHouseNo.RejectInputOnFirstFailure = false;
+            this.txtHouseNo.ResetOnPrompt = true;
+            this.txtHouseNo.ResetOnSpace = true;
+            this.txtHouseNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtHouseNo.SelectedText = "";
+            this.txtHouseNo.SelectionLength = 0;
+            this.txtHouseNo.SelectionStart = 0;
+            this.txtHouseNo.ShortcutsEnabled = true;
+            this.txtHouseNo.Size = new System.Drawing.Size(135, 48);
+            this.txtHouseNo.SkipLiterals = true;
+            this.txtHouseNo.TabIndex = 31;
+            this.txtHouseNo.TabStop = false;
+            this.txtHouseNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtHouseNo.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtHouseNo.TrailingIcon = null;
+            this.txtHouseNo.UseSystemPasswordChar = false;
+            this.txtHouseNo.ValidatingType = null;
+            // 
+            // txtEventBudget
+            // 
+            this.txtEventBudget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtEventBudget.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEventBudget.Depth = 0;
+            this.txtEventBudget.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEventBudget.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtEventBudget.Hint = "WRITE ABOUT EVENT BUDGET";
+            this.txtEventBudget.Location = new System.Drawing.Point(40, 401);
+            this.txtEventBudget.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtEventBudget.Name = "txtEventBudget";
+            this.txtEventBudget.Size = new System.Drawing.Size(272, 169);
+            this.txtEventBudget.TabIndex = 34;
+            this.txtEventBudget.Text = "";
+            // 
+            // btnSendEventBudget
+            // 
+            this.btnSendEventBudget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.btnSendEventBudget.FlatAppearance.BorderSize = 0;
+            this.btnSendEventBudget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnSendEventBudget.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSendEventBudget.ForeColor = System.Drawing.Color.White;
+            this.btnSendEventBudget.Location = new System.Drawing.Point(40, 605);
+            this.btnSendEventBudget.Name = "btnSendEventBudget";
+            this.btnSendEventBudget.Size = new System.Drawing.Size(109, 32);
+            this.btnSendEventBudget.TabIndex = 35;
+            this.btnSendEventBudget.Text = "SEND BUDGET";
+            this.btnSendEventBudget.UseVisualStyleBackColor = false;
+            // 
             // EventCoordinatorHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -233,6 +538,7 @@
             this.pnlShowEvents.ResumeLayout(false);
             this.pnlEventNews.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxTotalMembers)).EndInit();
+            this.pnlEventBudget.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -254,5 +560,17 @@
         private System.Windows.Forms.Label lblMemberNumber;
         private System.Windows.Forms.Label lblActiveMember;
         private System.Windows.Forms.PictureBox pictureBoxTotalMembers;
+        private System.Windows.Forms.Panel pnlEventBudget;
+        private System.Windows.Forms.Button btnClearAll;
+        private System.Windows.Forms.Label lblEventBudget;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtEventName;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtEventId;
+        private System.Windows.Forms.Label lblEventOrganizeDate;
+        private System.Windows.Forms.DateTimePicker dtpEventDate;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtRoadNo;
+        private MaterialSkin.Controls.MaterialComboBox cmbCity;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtHouseNo;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox txtEventBudget;
+        private System.Windows.Forms.Button btnSendEventBudget;
     }
 }

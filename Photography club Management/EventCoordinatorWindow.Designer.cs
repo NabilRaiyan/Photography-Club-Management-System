@@ -30,6 +30,11 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventCoordinatorWindow));
             this.pnlEventCoordinatorWindow = new System.Windows.Forms.Panel();
+            this.btnLogout = new FontAwesome.Sharp.IconButton();
+            this.btnNotifications = new FontAwesome.Sharp.IconButton();
+            this.btnPaySlip = new FontAwesome.Sharp.IconButton();
+            this.lblDashboard = new System.Windows.Forms.Label();
+            this.pnlWindowControl = new System.Windows.Forms.Panel();
             this.pnlNavMenu = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlActiveMenu = new System.Windows.Forms.Panel();
@@ -40,11 +45,8 @@
             this.pnlProfile = new System.Windows.Forms.Panel();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
-            this.pnlWindowControl = new System.Windows.Forms.Panel();
-            this.lblDashboard = new System.Windows.Forms.Label();
-            this.btnPaySlip = new FontAwesome.Sharp.IconButton();
-            this.btnNotifications = new FontAwesome.Sharp.IconButton();
-            this.btnLogout = new FontAwesome.Sharp.IconButton();
+            this.pnlBottomBorder = new System.Windows.Forms.Panel();
+            this.eventCoordinatorHome = new Photography_club_Management.EventCoordinatorHome();
             this.pnlEventCoordinatorWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -54,6 +56,8 @@
             // 
             // pnlEventCoordinatorWindow
             // 
+            this.pnlEventCoordinatorWindow.Controls.Add(this.eventCoordinatorHome);
+            this.pnlEventCoordinatorWindow.Controls.Add(this.pnlBottomBorder);
             this.pnlEventCoordinatorWindow.Controls.Add(this.btnLogout);
             this.pnlEventCoordinatorWindow.Controls.Add(this.btnNotifications);
             this.pnlEventCoordinatorWindow.Controls.Add(this.btnPaySlip);
@@ -65,6 +69,93 @@
             this.pnlEventCoordinatorWindow.Name = "pnlEventCoordinatorWindow";
             this.pnlEventCoordinatorWindow.Size = new System.Drawing.Size(1300, 821);
             this.pnlEventCoordinatorWindow.TabIndex = 0;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnLogout.FlatAppearance.BorderSize = 0;
+            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnLogout.ForeColor = System.Drawing.Color.Black;
+            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
+            this.btnLogout.IconColor = System.Drawing.Color.Black;
+            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnLogout.IconSize = 32;
+            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.Location = new System.Drawing.Point(1163, 30);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(137, 40);
+            this.btnLogout.TabIndex = 11;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
+            this.btnLogout.UseVisualStyleBackColor = false;
+            // 
+            // btnNotifications
+            // 
+            this.btnNotifications.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnNotifications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnNotifications.FlatAppearance.BorderSize = 0;
+            this.btnNotifications.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnNotifications.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNotifications.ForeColor = System.Drawing.Color.Black;
+            this.btnNotifications.IconChar = FontAwesome.Sharp.IconChar.Bell;
+            this.btnNotifications.IconColor = System.Drawing.Color.Black;
+            this.btnNotifications.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnNotifications.IconSize = 32;
+            this.btnNotifications.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotifications.Location = new System.Drawing.Point(1113, 35);
+            this.btnNotifications.Name = "btnNotifications";
+            this.btnNotifications.Size = new System.Drawing.Size(44, 36);
+            this.btnNotifications.TabIndex = 10;
+            this.btnNotifications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnNotifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnNotifications.UseVisualStyleBackColor = false;
+            // 
+            // btnPaySlip
+            // 
+            this.btnPaySlip.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnPaySlip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnPaySlip.FlatAppearance.BorderSize = 0;
+            this.btnPaySlip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnPaySlip.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPaySlip.ForeColor = System.Drawing.Color.Black;
+            this.btnPaySlip.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.btnPaySlip.IconColor = System.Drawing.Color.Black;
+            this.btnPaySlip.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnPaySlip.IconSize = 32;
+            this.btnPaySlip.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPaySlip.Location = new System.Drawing.Point(226, 28);
+            this.btnPaySlip.Name = "btnPaySlip";
+            this.btnPaySlip.Size = new System.Drawing.Size(142, 42);
+            this.btnPaySlip.TabIndex = 9;
+            this.btnPaySlip.Text = "PaySlip";
+            this.btnPaySlip.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnPaySlip.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnPaySlip.UseVisualStyleBackColor = false;
+            // 
+            // lblDashboard
+            // 
+            this.lblDashboard.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.lblDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.lblDashboard.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDashboard.ForeColor = System.Drawing.Color.Black;
+            this.lblDashboard.Location = new System.Drawing.Point(220, 28);
+            this.lblDashboard.Name = "lblDashboard";
+            this.lblDashboard.Size = new System.Drawing.Size(1080, 43);
+            this.lblDashboard.TabIndex = 3;
+            this.lblDashboard.Text = "Dashboard";
+            this.lblDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // pnlWindowControl
+            // 
+            this.pnlWindowControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlWindowControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlWindowControl.Location = new System.Drawing.Point(220, 0);
+            this.pnlWindowControl.Name = "pnlWindowControl";
+            this.pnlWindowControl.Size = new System.Drawing.Size(1080, 28);
+            this.pnlWindowControl.TabIndex = 2;
             // 
             // pnlNavMenu
             // 
@@ -213,92 +304,22 @@
             this.picBoxUser.TabIndex = 0;
             this.picBoxUser.TabStop = false;
             // 
-            // pnlWindowControl
+            // pnlBottomBorder
             // 
-            this.pnlWindowControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlWindowControl.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnlWindowControl.Location = new System.Drawing.Point(220, 0);
-            this.pnlWindowControl.Name = "pnlWindowControl";
-            this.pnlWindowControl.Size = new System.Drawing.Size(1080, 28);
-            this.pnlWindowControl.TabIndex = 2;
+            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlBottomBorder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottomBorder.Location = new System.Drawing.Point(220, 805);
+            this.pnlBottomBorder.Name = "pnlBottomBorder";
+            this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 16);
+            this.pnlBottomBorder.TabIndex = 12;
             // 
-            // lblDashboard
+            // eventCoordinatorHome
             // 
-            this.lblDashboard.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.lblDashboard.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblDashboard.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDashboard.ForeColor = System.Drawing.Color.Black;
-            this.lblDashboard.Location = new System.Drawing.Point(220, 28);
-            this.lblDashboard.Name = "lblDashboard";
-            this.lblDashboard.Size = new System.Drawing.Size(1080, 43);
-            this.lblDashboard.TabIndex = 3;
-            this.lblDashboard.Text = "Dashboard";
-            this.lblDashboard.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnPaySlip
-            // 
-            this.btnPaySlip.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnPaySlip.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnPaySlip.FlatAppearance.BorderSize = 0;
-            this.btnPaySlip.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPaySlip.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPaySlip.ForeColor = System.Drawing.Color.Black;
-            this.btnPaySlip.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.btnPaySlip.IconColor = System.Drawing.Color.Black;
-            this.btnPaySlip.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnPaySlip.IconSize = 32;
-            this.btnPaySlip.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPaySlip.Location = new System.Drawing.Point(226, 28);
-            this.btnPaySlip.Name = "btnPaySlip";
-            this.btnPaySlip.Size = new System.Drawing.Size(142, 42);
-            this.btnPaySlip.TabIndex = 9;
-            this.btnPaySlip.Text = "PaySlip";
-            this.btnPaySlip.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPaySlip.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnPaySlip.UseVisualStyleBackColor = false;
-            // 
-            // btnNotifications
-            // 
-            this.btnNotifications.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnNotifications.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnNotifications.FlatAppearance.BorderSize = 0;
-            this.btnNotifications.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnNotifications.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnNotifications.ForeColor = System.Drawing.Color.Black;
-            this.btnNotifications.IconChar = FontAwesome.Sharp.IconChar.Bell;
-            this.btnNotifications.IconColor = System.Drawing.Color.Black;
-            this.btnNotifications.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnNotifications.IconSize = 32;
-            this.btnNotifications.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotifications.Location = new System.Drawing.Point(1113, 35);
-            this.btnNotifications.Name = "btnNotifications";
-            this.btnNotifications.Size = new System.Drawing.Size(44, 36);
-            this.btnNotifications.TabIndex = 10;
-            this.btnNotifications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnNotifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnNotifications.UseVisualStyleBackColor = false;
-            // 
-            // btnLogout
-            // 
-            this.btnLogout.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.btnLogout.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnLogout.FlatAppearance.BorderSize = 0;
-            this.btnLogout.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnLogout.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnLogout.ForeColor = System.Drawing.Color.Black;
-            this.btnLogout.IconChar = FontAwesome.Sharp.IconChar.RightToBracket;
-            this.btnLogout.IconColor = System.Drawing.Color.Black;
-            this.btnLogout.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnLogout.IconSize = 32;
-            this.btnLogout.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.Location = new System.Drawing.Point(1163, 30);
-            this.btnLogout.Name = "btnLogout";
-            this.btnLogout.Size = new System.Drawing.Size(137, 40);
-            this.btnLogout.TabIndex = 11;
-            this.btnLogout.Text = "Logout";
-            this.btnLogout.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLogout.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
-            this.btnLogout.UseVisualStyleBackColor = false;
+            this.eventCoordinatorHome.BackColor = System.Drawing.Color.White;
+            this.eventCoordinatorHome.Location = new System.Drawing.Point(220, 74);
+            this.eventCoordinatorHome.Name = "eventCoordinatorHome";
+            this.eventCoordinatorHome.Size = new System.Drawing.Size(1077, 729);
+            this.eventCoordinatorHome.TabIndex = 13;
             // 
             // EventCoordinatorWindow
             // 
@@ -337,5 +358,7 @@
         private FontAwesome.Sharp.IconButton btnPaySlip;
         private FontAwesome.Sharp.IconButton btnNotifications;
         private FontAwesome.Sharp.IconButton btnLogout;
+        private System.Windows.Forms.Panel pnlBottomBorder;
+        private EventCoordinatorHome eventCoordinatorHome;
     }
 }

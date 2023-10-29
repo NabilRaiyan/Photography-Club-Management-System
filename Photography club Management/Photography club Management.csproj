@@ -110,6 +110,12 @@
     <Compile Include="notificationsWindow.Designer.cs">
       <DependentUpon>notificationsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhotographerEventsShow.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhotographerEventsShow.Designer.cs">
+      <DependentUpon>PhotographerEventsShow.cs</DependentUpon>
+    </Compile>
     <Compile Include="PhotographerGallery.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -171,6 +177,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="notificationsWindow.resx">
       <DependentUpon>notificationsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotographerEventsShow.resx">
+      <DependentUpon>PhotographerEventsShow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="PhotographerGallery.resx">
       <DependentUpon>PhotographerGallery.cs</DependentUpon>

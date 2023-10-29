@@ -38,7 +38,7 @@ namespace Photography_club_Management
 
             pnlActiveMenu.Height = btnEvents.Height;
             pnlActiveMenu.Top = btnEvents.Top;
-            eventsWindows.BringToFront();
+            photographerEventsShow.BringToFront();
         }
 
         private void btnPhotographerGallery_Click(object sender, EventArgs e)
