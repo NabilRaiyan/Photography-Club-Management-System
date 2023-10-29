@@ -48,6 +48,7 @@
             this.pnlBottomBorder = new System.Windows.Forms.Panel();
             this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.eventCoordinatorHome = new Photography_club_Management.EventCoordinatorHome();
+            this.eventsWindows = new Photography_club_Management.EventsWindows();
             this.pnlEventCoordinatorWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -57,6 +58,7 @@
             // 
             // pnlEventCoordinatorWindow
             // 
+            this.pnlEventCoordinatorWindow.Controls.Add(this.eventsWindows);
             this.pnlEventCoordinatorWindow.Controls.Add(this.notificationsWindow);
             this.pnlEventCoordinatorWindow.Controls.Add(this.eventCoordinatorHome);
             this.pnlEventCoordinatorWindow.Controls.Add(this.pnlBottomBorder);
@@ -233,6 +235,7 @@
             this.btnEvents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEvents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEvents.UseVisualStyleBackColor = true;
+            this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
             // 
             // btnEventBudget
             // 
@@ -333,6 +336,14 @@
             this.eventCoordinatorHome.Size = new System.Drawing.Size(1077, 729);
             this.eventCoordinatorHome.TabIndex = 13;
             // 
+            // eventsWindows
+            // 
+            this.eventsWindows.BackColor = System.Drawing.Color.White;
+            this.eventsWindows.Location = new System.Drawing.Point(225, 70);
+            this.eventsWindows.Name = "eventsWindows";
+            this.eventsWindows.Size = new System.Drawing.Size(1072, 729);
+            this.eventsWindows.TabIndex = 15;
+            // 
             // EventCoordinatorWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -373,5 +384,6 @@
         private System.Windows.Forms.Panel pnlBottomBorder;
         private EventCoordinatorHome eventCoordinatorHome;
         private notificationsWindow notificationsWindow;
+        private EventsWindows eventsWindows;
     }
 }
