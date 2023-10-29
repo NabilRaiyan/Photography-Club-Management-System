@@ -34,6 +34,12 @@
             this.txtSearchMembers = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.pnlBottomBorder = new System.Windows.Forms.Panel();
             this.pnlAllMembers = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.iconButton1 = new FontAwesome.Sharp.IconButton();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pnlMembersHeading = new System.Windows.Forms.Panel();
             this.lblMemberCurrentWorkingHeading = new System.Windows.Forms.Label();
             this.lblMemberRoleHeading = new System.Windows.Forms.Label();
@@ -55,18 +61,15 @@
             this.txtMemberName = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.btnAddMember = new System.Windows.Forms.Button();
             this.lblAddMember = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.iconButton1 = new FontAwesome.Sharp.IconButton();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.txtHouseNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.cmbCity = new MaterialSkin.Controls.MaterialComboBox();
+            this.txtRoadNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.pnlMember.SuspendLayout();
             this.pnlAllMembers.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.pnlMembersHeading.SuspendLayout();
             this.pnlEventNews.SuspendLayout();
             this.pnlAddMember.SuspendLayout();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblHome
@@ -153,6 +156,78 @@
             this.pnlAllMembers.Name = "pnlAllMembers";
             this.pnlAllMembers.Size = new System.Drawing.Size(680, 606);
             this.pnlAllMembers.TabIndex = 10;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.White;
+            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.iconButton1);
+            this.panel1.Controls.Add(this.label2);
+            this.panel1.Controls.Add(this.label3);
+            this.panel1.Controls.Add(this.label4);
+            this.panel1.Location = new System.Drawing.Point(3, 110);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(674, 41);
+            this.panel1.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Blue;
+            this.label1.Location = new System.Drawing.Point(550, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(49, 18);
+            this.label1.TabIndex = 9;
+            this.label1.Text = "Ev-01";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // iconButton1
+            // 
+            this.iconButton1.BackColor = System.Drawing.Color.White;
+            this.iconButton1.FlatAppearance.BorderSize = 0;
+            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Trash;
+            this.iconButton1.IconColor = System.Drawing.Color.Black;
+            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.iconButton1.IconSize = 25;
+            this.iconButton1.Location = new System.Drawing.Point(639, 9);
+            this.iconButton1.Name = "iconButton1";
+            this.iconButton1.Size = new System.Drawing.Size(30, 27);
+            this.iconButton1.TabIndex = 8;
+            this.iconButton1.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Blue;
+            this.label2.Location = new System.Drawing.Point(16, 9);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(59, 18);
+            this.label2.TabIndex = 6;
+            this.label2.Text = "Ph-01";
+            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Blue;
+            this.label3.Location = new System.Drawing.Point(340, 9);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(126, 18);
+            this.label3.TabIndex = 2;
+            this.label3.Text = "Photographer";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(157, 9);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(139, 18);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Raiyan Al Sultan";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlMembersHeading
             // 
@@ -286,6 +361,9 @@
             // pnlAddMember
             // 
             this.pnlAddMember.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.pnlAddMember.Controls.Add(this.txtRoadNo);
+            this.pnlAddMember.Controls.Add(this.cmbCity);
+            this.pnlAddMember.Controls.Add(this.txtHouseNo);
             this.pnlAddMember.Controls.Add(this.cmbBoxMemberRole);
             this.pnlAddMember.Controls.Add(this.txtMemberPhoneNumber);
             this.pnlAddMember.Controls.Add(this.txtMemberEmail);
@@ -299,6 +377,7 @@
             this.pnlAddMember.Name = "pnlAddMember";
             this.pnlAddMember.Size = new System.Drawing.Size(373, 666);
             this.pnlAddMember.TabIndex = 9;
+            this.pnlAddMember.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAddMember_Paint);
             // 
             // cmbBoxMemberRole
             // 
@@ -321,11 +400,11 @@
             "Advisor",
             "Event Coordinator",
             "Marketing"});
-            this.cmbBoxMemberRole.Location = new System.Drawing.Point(151, 438);
+            this.cmbBoxMemberRole.Location = new System.Drawing.Point(194, 414);
             this.cmbBoxMemberRole.MaxDropDownItems = 4;
             this.cmbBoxMemberRole.MouseState = MaterialSkin.MouseState.OUT;
             this.cmbBoxMemberRole.Name = "cmbBoxMemberRole";
-            this.cmbBoxMemberRole.Size = new System.Drawing.Size(199, 49);
+            this.cmbBoxMemberRole.Size = new System.Drawing.Size(156, 49);
             this.cmbBoxMemberRole.StartIndex = 0;
             this.cmbBoxMemberRole.TabIndex = 21;
             // 
@@ -344,7 +423,7 @@
             this.txtMemberPhoneNumber.Hint = "ENTER MEMBER PHONE NUMBER";
             this.txtMemberPhoneNumber.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtMemberPhoneNumber.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtMemberPhoneNumber.LeadingIcon")));
-            this.txtMemberPhoneNumber.Location = new System.Drawing.Point(23, 368);
+            this.txtMemberPhoneNumber.Location = new System.Drawing.Point(23, 350);
             this.txtMemberPhoneNumber.Mask = "";
             this.txtMemberPhoneNumber.MaxLength = 32767;
             this.txtMemberPhoneNumber.MouseState = MaterialSkin.MouseState.OUT;
@@ -370,6 +449,7 @@
             this.txtMemberPhoneNumber.TrailingIcon = null;
             this.txtMemberPhoneNumber.UseSystemPasswordChar = false;
             this.txtMemberPhoneNumber.ValidatingType = null;
+            this.txtMemberPhoneNumber.Click += new System.EventHandler(this.txtMemberPhoneNumber_Click);
             // 
             // txtMemberEmail
             // 
@@ -386,7 +466,7 @@
             this.txtMemberEmail.Hint = "ENTER MEMBER EMAIL";
             this.txtMemberEmail.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtMemberEmail.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtMemberEmail.LeadingIcon")));
-            this.txtMemberEmail.Location = new System.Drawing.Point(23, 297);
+            this.txtMemberEmail.Location = new System.Drawing.Point(23, 285);
             this.txtMemberEmail.Mask = "";
             this.txtMemberEmail.MaxLength = 32767;
             this.txtMemberEmail.MouseState = MaterialSkin.MouseState.OUT;
@@ -412,6 +492,7 @@
             this.txtMemberEmail.TrailingIcon = null;
             this.txtMemberEmail.UseSystemPasswordChar = false;
             this.txtMemberEmail.ValidatingType = null;
+            this.txtMemberEmail.Click += new System.EventHandler(this.txtMemberEmail_Click);
             // 
             // txtMemberAge
             // 
@@ -428,7 +509,7 @@
             this.txtMemberAge.Hint = "AGE";
             this.txtMemberAge.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtMemberAge.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtMemberAge.LeadingIcon")));
-            this.txtMemberAge.Location = new System.Drawing.Point(23, 439);
+            this.txtMemberAge.Location = new System.Drawing.Point(23, 415);
             this.txtMemberAge.Mask = "";
             this.txtMemberAge.MaxLength = 32767;
             this.txtMemberAge.MouseState = MaterialSkin.MouseState.OUT;
@@ -445,7 +526,7 @@
             this.txtMemberAge.SelectionLength = 0;
             this.txtMemberAge.SelectionStart = 0;
             this.txtMemberAge.ShortcutsEnabled = true;
-            this.txtMemberAge.Size = new System.Drawing.Size(90, 48);
+            this.txtMemberAge.Size = new System.Drawing.Size(135, 48);
             this.txtMemberAge.SkipLiterals = true;
             this.txtMemberAge.TabIndex = 18;
             this.txtMemberAge.TabStop = false;
@@ -454,6 +535,7 @@
             this.txtMemberAge.TrailingIcon = null;
             this.txtMemberAge.UseSystemPasswordChar = false;
             this.txtMemberAge.ValidatingType = null;
+            this.txtMemberAge.Click += new System.EventHandler(this.txtMemberAge_Click);
             // 
             // txtMemberPassword
             // 
@@ -470,7 +552,7 @@
             this.txtMemberPassword.Hint = "ENTER MEMBER PASSWORD";
             this.txtMemberPassword.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtMemberPassword.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtMemberPassword.LeadingIcon")));
-            this.txtMemberPassword.Location = new System.Drawing.Point(23, 226);
+            this.txtMemberPassword.Location = new System.Drawing.Point(23, 220);
             this.txtMemberPassword.Mask = "";
             this.txtMemberPassword.MaxLength = 32767;
             this.txtMemberPassword.MouseState = MaterialSkin.MouseState.OUT;
@@ -496,6 +578,7 @@
             this.txtMemberPassword.TrailingIcon = null;
             this.txtMemberPassword.UseSystemPasswordChar = true;
             this.txtMemberPassword.ValidatingType = null;
+            this.txtMemberPassword.Click += new System.EventHandler(this.txtMemberPassword_Click);
             // 
             // txtMemberId
             // 
@@ -538,6 +621,7 @@
             this.txtMemberId.TrailingIcon = null;
             this.txtMemberId.UseSystemPasswordChar = false;
             this.txtMemberId.ValidatingType = null;
+            this.txtMemberId.Click += new System.EventHandler(this.txtMemberId_Click);
             // 
             // txtMemberName
             // 
@@ -554,7 +638,7 @@
             this.txtMemberName.Hint = "ENTER MEMBER NAME";
             this.txtMemberName.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtMemberName.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtMemberName.LeadingIcon")));
-            this.txtMemberName.Location = new System.Drawing.Point(23, 155);
+            this.txtMemberName.Location = new System.Drawing.Point(23, 152);
             this.txtMemberName.Mask = "";
             this.txtMemberName.MaxLength = 32767;
             this.txtMemberName.MouseState = MaterialSkin.MouseState.OUT;
@@ -580,6 +664,7 @@
             this.txtMemberName.TrailingIcon = null;
             this.txtMemberName.UseSystemPasswordChar = false;
             this.txtMemberName.ValidatingType = null;
+            this.txtMemberName.Click += new System.EventHandler(this.txtMemberName_Click);
             // 
             // btnAddMember
             // 
@@ -590,7 +675,7 @@
             this.btnAddMember.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnAddMember.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnAddMember.ForeColor = System.Drawing.Color.White;
-            this.btnAddMember.Location = new System.Drawing.Point(85, 603);
+            this.btnAddMember.Location = new System.Drawing.Point(101, 614);
             this.btnAddMember.Name = "btnAddMember";
             this.btnAddMember.Size = new System.Drawing.Size(161, 38);
             this.btnAddMember.TabIndex = 9;
@@ -608,77 +693,120 @@
             this.lblAddMember.Text = "ADD MEMBER";
             this.lblAddMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // panel1
+            // txtHouseNo
             // 
-            this.panel1.BackColor = System.Drawing.Color.White;
-            this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.iconButton1);
-            this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.label3);
-            this.panel1.Controls.Add(this.label4);
-            this.panel1.Location = new System.Drawing.Point(3, 110);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(674, 41);
-            this.panel1.TabIndex = 10;
+            this.txtHouseNo.AllowPromptAsInput = true;
+            this.txtHouseNo.AnimateReadOnly = false;
+            this.txtHouseNo.AsciiOnly = false;
+            this.txtHouseNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtHouseNo.BeepOnError = false;
+            this.txtHouseNo.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtHouseNo.Depth = 0;
+            this.txtHouseNo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtHouseNo.HidePromptOnLeave = false;
+            this.txtHouseNo.HideSelection = true;
+            this.txtHouseNo.Hint = "HOUSE NO";
+            this.txtHouseNo.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtHouseNo.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtHouseNo.LeadingIcon")));
+            this.txtHouseNo.Location = new System.Drawing.Point(23, 480);
+            this.txtHouseNo.Mask = "";
+            this.txtHouseNo.MaxLength = 32767;
+            this.txtHouseNo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtHouseNo.Name = "txtHouseNo";
+            this.txtHouseNo.PasswordChar = '\0';
+            this.txtHouseNo.PrefixSuffixText = null;
+            this.txtHouseNo.PromptChar = '_';
+            this.txtHouseNo.ReadOnly = false;
+            this.txtHouseNo.RejectInputOnFirstFailure = false;
+            this.txtHouseNo.ResetOnPrompt = true;
+            this.txtHouseNo.ResetOnSpace = true;
+            this.txtHouseNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtHouseNo.SelectedText = "";
+            this.txtHouseNo.SelectionLength = 0;
+            this.txtHouseNo.SelectionStart = 0;
+            this.txtHouseNo.ShortcutsEnabled = true;
+            this.txtHouseNo.Size = new System.Drawing.Size(135, 48);
+            this.txtHouseNo.SkipLiterals = true;
+            this.txtHouseNo.TabIndex = 22;
+            this.txtHouseNo.TabStop = false;
+            this.txtHouseNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtHouseNo.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtHouseNo.TrailingIcon = null;
+            this.txtHouseNo.UseSystemPasswordChar = false;
+            this.txtHouseNo.ValidatingType = null;
+            this.txtHouseNo.Click += new System.EventHandler(this.txtHouseNo_Click);
             // 
-            // label1
+            // cmbCity
             // 
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.Blue;
-            this.label1.Location = new System.Drawing.Point(550, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(49, 18);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "Ev-01";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.cmbCity.AutoResize = false;
+            this.cmbCity.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.cmbCity.Depth = 0;
+            this.cmbCity.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawVariable;
+            this.cmbCity.DropDownHeight = 174;
+            this.cmbCity.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cmbCity.DropDownWidth = 121;
+            this.cmbCity.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.cmbCity.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cmbCity.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.cmbCity.FormattingEnabled = true;
+            this.cmbCity.Hint = "CHOSE CITY";
+            this.cmbCity.IntegralHeight = false;
+            this.cmbCity.ItemHeight = 43;
+            this.cmbCity.Items.AddRange(new object[] {
+            "Dhaka",
+            "Narayangonj",
+            "Khulna",
+            "Rajshahi"});
+            this.cmbCity.Location = new System.Drawing.Point(23, 543);
+            this.cmbCity.MaxDropDownItems = 4;
+            this.cmbCity.MouseState = MaterialSkin.MouseState.OUT;
+            this.cmbCity.Name = "cmbCity";
+            this.cmbCity.Size = new System.Drawing.Size(327, 49);
+            this.cmbCity.StartIndex = 0;
+            this.cmbCity.TabIndex = 25;
+            this.cmbCity.SelectedIndexChanged += new System.EventHandler(this.cmbCity_SelectedIndexChanged);
             // 
-            // iconButton1
+            // txtRoadNo
             // 
-            this.iconButton1.BackColor = System.Drawing.Color.White;
-            this.iconButton1.FlatAppearance.BorderSize = 0;
-            this.iconButton1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.iconButton1.IconChar = FontAwesome.Sharp.IconChar.Trash;
-            this.iconButton1.IconColor = System.Drawing.Color.Black;
-            this.iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.iconButton1.IconSize = 25;
-            this.iconButton1.Location = new System.Drawing.Point(639, 9);
-            this.iconButton1.Name = "iconButton1";
-            this.iconButton1.Size = new System.Drawing.Size(30, 27);
-            this.iconButton1.TabIndex = 8;
-            this.iconButton1.UseVisualStyleBackColor = false;
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Blue;
-            this.label2.Location = new System.Drawing.Point(16, 9);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(59, 18);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "Ph-01";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.Blue;
-            this.label3.Location = new System.Drawing.Point(340, 9);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(126, 18);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Photographer";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(157, 9);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(139, 18);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Raiyan Al Sultan";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.txtRoadNo.AllowPromptAsInput = true;
+            this.txtRoadNo.AnimateReadOnly = false;
+            this.txtRoadNo.AsciiOnly = false;
+            this.txtRoadNo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.txtRoadNo.BeepOnError = false;
+            this.txtRoadNo.CutCopyMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtRoadNo.Depth = 0;
+            this.txtRoadNo.Font = new System.Drawing.Font("Roboto", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.txtRoadNo.HidePromptOnLeave = false;
+            this.txtRoadNo.HideSelection = true;
+            this.txtRoadNo.Hint = "ROAD NO";
+            this.txtRoadNo.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
+            this.txtRoadNo.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtRoadNo.LeadingIcon")));
+            this.txtRoadNo.Location = new System.Drawing.Point(194, 479);
+            this.txtRoadNo.Mask = "";
+            this.txtRoadNo.MaxLength = 32767;
+            this.txtRoadNo.MouseState = MaterialSkin.MouseState.OUT;
+            this.txtRoadNo.Name = "txtRoadNo";
+            this.txtRoadNo.PasswordChar = '\0';
+            this.txtRoadNo.PrefixSuffixText = null;
+            this.txtRoadNo.PromptChar = '_';
+            this.txtRoadNo.ReadOnly = false;
+            this.txtRoadNo.RejectInputOnFirstFailure = false;
+            this.txtRoadNo.ResetOnPrompt = true;
+            this.txtRoadNo.ResetOnSpace = true;
+            this.txtRoadNo.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.txtRoadNo.SelectedText = "";
+            this.txtRoadNo.SelectionLength = 0;
+            this.txtRoadNo.SelectionStart = 0;
+            this.txtRoadNo.ShortcutsEnabled = true;
+            this.txtRoadNo.Size = new System.Drawing.Size(156, 48);
+            this.txtRoadNo.SkipLiterals = true;
+            this.txtRoadNo.TabIndex = 26;
+            this.txtRoadNo.TabStop = false;
+            this.txtRoadNo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.txtRoadNo.TextMaskFormat = System.Windows.Forms.MaskFormat.IncludeLiterals;
+            this.txtRoadNo.TrailingIcon = null;
+            this.txtRoadNo.UseSystemPasswordChar = false;
+            this.txtRoadNo.ValidatingType = null;
             // 
             // Members
             // 
@@ -690,10 +818,10 @@
             this.Size = new System.Drawing.Size(1080, 729);
             this.pnlMember.ResumeLayout(false);
             this.pnlAllMembers.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.pnlMembersHeading.ResumeLayout(false);
             this.pnlEventNews.ResumeLayout(false);
             this.pnlAddMember.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -732,5 +860,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtHouseNo;
+        private MaterialSkin.Controls.MaterialComboBox cmbCity;
+        private MaterialSkin.Controls.MaterialMaskedTextBox txtRoadNo;
     }
 }

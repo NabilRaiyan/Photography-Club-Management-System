@@ -68,6 +68,12 @@
     <Compile Include="Customers.Designer.cs">
       <DependentUpon>Customers.cs</DependentUpon>
     </Compile>
+    <Compile Include="EventCoordinatorHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EventCoordinatorHome.Designer.cs">
+      <DependentUpon>EventCoordinatorHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="EventCoordinatorWindow.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -144,6 +150,9 @@
     </Compile>
     <EmbeddedResource Include="Customers.resx">
       <DependentUpon>Customers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EventCoordinatorHome.resx">
+      <DependentUpon>EventCoordinatorHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="EventCoordinatorWindow.resx">
       <DependentUpon>EventCoordinatorWindow.cs</DependentUpon>
