@@ -31,7 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventsWindows));
             this.lblEvents = new System.Windows.Forms.Label();
             this.pnlEvents = new System.Windows.Forms.Panel();
-            this.pnlBottomBorder = new System.Windows.Forms.Panel();
             this.txtSearchEvents = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.pnlAllEvents = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -73,23 +72,13 @@
             // 
             // pnlEvents
             // 
-            this.pnlEvents.Controls.Add(this.pnlBottomBorder);
             this.pnlEvents.Controls.Add(this.txtSearchEvents);
             this.pnlEvents.Controls.Add(this.pnlAllEvents);
             this.pnlEvents.Controls.Add(this.lblEvents);
-            this.pnlEvents.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlEvents.Location = new System.Drawing.Point(0, 0);
             this.pnlEvents.Name = "pnlEvents";
             this.pnlEvents.Size = new System.Drawing.Size(1080, 729);
             this.pnlEvents.TabIndex = 3;
-            // 
-            // pnlBottomBorder
-            // 
-            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlBottomBorder.Location = new System.Drawing.Point(3, 715);
-            this.pnlBottomBorder.Name = "pnlBottomBorder";
-            this.pnlBottomBorder.Size = new System.Drawing.Size(1077, 14);
-            this.pnlBottomBorder.TabIndex = 12;
             // 
             // txtSearchEvents
             // 
@@ -140,9 +129,9 @@
             this.pnlAllEvents.Controls.Add(this.pnlEventsHeading);
             this.pnlAllEvents.Controls.Add(this.pnlEventNews);
             this.pnlAllEvents.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlAllEvents.Location = new System.Drawing.Point(0, 126);
+            this.pnlAllEvents.Location = new System.Drawing.Point(0, 129);
             this.pnlAllEvents.Name = "pnlAllEvents";
-            this.pnlAllEvents.Size = new System.Drawing.Size(1080, 603);
+            this.pnlAllEvents.Size = new System.Drawing.Size(1080, 600);
             this.pnlAllEvents.TabIndex = 11;
             // 
             // panel1
@@ -427,6 +416,5 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private MaterialSkin.Controls.MaterialMaskedTextBox txtSearchEvents;
-        private System.Windows.Forms.Panel pnlBottomBorder;
     }
 }

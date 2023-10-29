@@ -32,7 +32,6 @@
             this.pnlCustomers = new System.Windows.Forms.Panel();
             this.pnlSearchClient = new System.Windows.Forms.Panel();
             this.txtSearchCustomer = new MaterialSkin.Controls.MaterialTextBox2();
-            this.pnlBottomBorder = new System.Windows.Forms.Panel();
             this.pnlAllCustomers = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -66,13 +65,11 @@
             // pnlCustomers
             // 
             this.pnlCustomers.Controls.Add(this.pnlSearchClient);
-            this.pnlCustomers.Controls.Add(this.pnlBottomBorder);
             this.pnlCustomers.Controls.Add(this.pnlAllCustomers);
             this.pnlCustomers.Controls.Add(this.lblCustomer);
-            this.pnlCustomers.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCustomers.Location = new System.Drawing.Point(0, 0);
             this.pnlCustomers.Name = "pnlCustomers";
-            this.pnlCustomers.Size = new System.Drawing.Size(1080, 729);
+            this.pnlCustomers.Size = new System.Drawing.Size(1080, 735);
             this.pnlCustomers.TabIndex = 0;
             // 
             // pnlSearchClient
@@ -112,24 +109,15 @@
             this.txtSearchCustomer.TrailingIcon = null;
             this.txtSearchCustomer.UseSystemPasswordChar = false;
             // 
-            // pnlBottomBorder
-            // 
-            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlBottomBorder.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottomBorder.Location = new System.Drawing.Point(0, 715);
-            this.pnlBottomBorder.Name = "pnlBottomBorder";
-            this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 14);
-            this.pnlBottomBorder.TabIndex = 13;
-            // 
             // pnlAllCustomers
             // 
             this.pnlAllCustomers.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.pnlAllCustomers.Controls.Add(this.panel1);
             this.pnlAllCustomers.Controls.Add(this.pnlCustomerHeading);
             this.pnlAllCustomers.Controls.Add(this.pnlCustomer);
-            this.pnlAllCustomers.Location = new System.Drawing.Point(3, 123);
+            this.pnlAllCustomers.Location = new System.Drawing.Point(0, 126);
             this.pnlAllCustomers.Name = "pnlAllCustomers";
-            this.pnlAllCustomers.Size = new System.Drawing.Size(1077, 603);
+            this.pnlAllCustomers.Size = new System.Drawing.Size(1080, 603);
             this.pnlAllCustomers.TabIndex = 12;
             // 
             // panel1
@@ -228,7 +216,7 @@
             this.pnlCustomerHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCustomerHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlCustomerHeading.Name = "pnlCustomerHeading";
-            this.pnlCustomerHeading.Size = new System.Drawing.Size(1077, 37);
+            this.pnlCustomerHeading.Size = new System.Drawing.Size(1080, 37);
             this.pnlCustomerHeading.TabIndex = 3;
             // 
             // lblClientPhoneNumberHeading
@@ -379,6 +367,7 @@
             this.lblCustomer.Size = new System.Drawing.Size(140, 34);
             this.lblCustomer.TabIndex = 1;
             this.lblCustomer.Text = "Clients";
+            this.lblCustomer.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CustomersWindow
             // 
@@ -426,7 +415,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private MaterialSkin.Controls.MaterialTextBox2 txtSearchCustomer;
-        private System.Windows.Forms.Panel pnlBottomBorder;
         private System.Windows.Forms.Panel pnlSearchClient;
     }
 }

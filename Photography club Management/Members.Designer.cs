@@ -52,6 +52,9 @@
             this.lblMemberRole = new System.Windows.Forms.Label();
             this.lblMemberName = new System.Windows.Forms.Label();
             this.pnlAddMember = new System.Windows.Forms.Panel();
+            this.lblMemberJoiningDate = new System.Windows.Forms.Label();
+            this.dtpMemberJoiningDate = new System.Windows.Forms.DateTimePicker();
+            this.btnClearAll = new System.Windows.Forms.Button();
             this.txtRoadNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.cmbCity = new MaterialSkin.Controls.MaterialComboBox();
             this.txtHouseNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
@@ -64,9 +67,6 @@
             this.txtMemberName = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.btnAddMember = new System.Windows.Forms.Button();
             this.lblAddMember = new System.Windows.Forms.Label();
-            this.btnClearAll = new System.Windows.Forms.Button();
-            this.dtpMemberJoiningDate = new System.Windows.Forms.DateTimePicker();
-            this.lblMemberJoiningDate = new System.Windows.Forms.Label();
             this.pnlMember.SuspendLayout();
             this.pnlAllMembers.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -384,6 +384,41 @@
             this.pnlAddMember.Size = new System.Drawing.Size(373, 666);
             this.pnlAddMember.TabIndex = 9;
             this.pnlAddMember.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAddMember_Paint);
+            // 
+            // lblMemberJoiningDate
+            // 
+            this.lblMemberJoiningDate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemberJoiningDate.ForeColor = System.Drawing.Color.Black;
+            this.lblMemberJoiningDate.Location = new System.Drawing.Point(170, 84);
+            this.lblMemberJoiningDate.Name = "lblMemberJoiningDate";
+            this.lblMemberJoiningDate.Size = new System.Drawing.Size(105, 22);
+            this.lblMemberJoiningDate.TabIndex = 6;
+            this.lblMemberJoiningDate.Text = "JOINING DATE";
+            this.lblMemberJoiningDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // dtpMemberJoiningDate
+            // 
+            this.dtpMemberJoiningDate.CustomFormat = "";
+            this.dtpMemberJoiningDate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpMemberJoiningDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpMemberJoiningDate.Location = new System.Drawing.Point(173, 106);
+            this.dtpMemberJoiningDate.Name = "dtpMemberJoiningDate";
+            this.dtpMemberJoiningDate.Size = new System.Drawing.Size(177, 26);
+            this.dtpMemberJoiningDate.TabIndex = 28;
+            // 
+            // btnClearAll
+            // 
+            this.btnClearAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.btnClearAll.FlatAppearance.BorderSize = 0;
+            this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnClearAll.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnClearAll.ForeColor = System.Drawing.Color.White;
+            this.btnClearAll.Location = new System.Drawing.Point(262, 614);
+            this.btnClearAll.Name = "btnClearAll";
+            this.btnClearAll.Size = new System.Drawing.Size(88, 38);
+            this.btnClearAll.TabIndex = 27;
+            this.btnClearAll.Text = "CLEAR ALL";
+            this.btnClearAll.UseVisualStyleBackColor = false;
             // 
             // txtRoadNo
             // 
@@ -813,41 +848,6 @@
             this.lblAddMember.TabIndex = 6;
             this.lblAddMember.Text = "ADD MEMBER";
             this.lblAddMember.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // btnClearAll
-            // 
-            this.btnClearAll.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.btnClearAll.FlatAppearance.BorderSize = 0;
-            this.btnClearAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnClearAll.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnClearAll.ForeColor = System.Drawing.Color.White;
-            this.btnClearAll.Location = new System.Drawing.Point(262, 614);
-            this.btnClearAll.Name = "btnClearAll";
-            this.btnClearAll.Size = new System.Drawing.Size(88, 38);
-            this.btnClearAll.TabIndex = 27;
-            this.btnClearAll.Text = "CLEAR ALL";
-            this.btnClearAll.UseVisualStyleBackColor = false;
-            // 
-            // dtpMemberJoiningDate
-            // 
-            this.dtpMemberJoiningDate.CustomFormat = "2-12-2023";
-            this.dtpMemberJoiningDate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpMemberJoiningDate.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtpMemberJoiningDate.Location = new System.Drawing.Point(173, 109);
-            this.dtpMemberJoiningDate.Name = "dtpMemberJoiningDate";
-            this.dtpMemberJoiningDate.Size = new System.Drawing.Size(177, 23);
-            this.dtpMemberJoiningDate.TabIndex = 28;
-            // 
-            // lblMemberJoiningDate
-            // 
-            this.lblMemberJoiningDate.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemberJoiningDate.ForeColor = System.Drawing.Color.Black;
-            this.lblMemberJoiningDate.Location = new System.Drawing.Point(170, 84);
-            this.lblMemberJoiningDate.Name = "lblMemberJoiningDate";
-            this.lblMemberJoiningDate.Size = new System.Drawing.Size(105, 22);
-            this.lblMemberJoiningDate.TabIndex = 6;
-            this.lblMemberJoiningDate.Text = "JOINING DATE";
-            this.lblMemberJoiningDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Members
             // 

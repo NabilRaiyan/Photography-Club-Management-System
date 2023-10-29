@@ -14,6 +14,7 @@ using System.Windows.Forms;
 
 namespace Photography_club_Management
 {
+    
     public partial class IndexWindow : Form
     {
         public IndexWindow()
@@ -29,9 +30,6 @@ namespace Photography_club_Management
 
         }
 
-        private void btnLogin_Click(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }

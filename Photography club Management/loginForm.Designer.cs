@@ -30,10 +30,9 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(loginForm));
             this.loginPanel = new System.Windows.Forms.Panel();
-            this.loginFormPanel = new System.Windows.Forms.Panel();
+            this.pnlLoginForm = new System.Windows.Forms.Panel();
             this.picLogo = new System.Windows.Forms.PictureBox();
-            this.btnCloseWindow = new System.Windows.Forms.PictureBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.lblForgotPassword = new System.Windows.Forms.Label();
             this.btnLogin = new MaterialSkin.Controls.MaterialButton();
             this.lblLoginPasswordInput = new MaterialSkin.Controls.MaterialTextBox2();
             this.txtLoginInput = new MaterialSkin.Controls.MaterialTextBox2();
@@ -41,9 +40,8 @@
             this.loginImagePanel = new System.Windows.Forms.Panel();
             this.loginLeftPicture = new System.Windows.Forms.PictureBox();
             this.loginPanel.SuspendLayout();
-            this.loginFormPanel.SuspendLayout();
+            this.pnlLoginForm.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCloseWindow)).BeginInit();
             this.loginImagePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.loginLeftPicture)).BeginInit();
             this.SuspendLayout();
@@ -51,7 +49,7 @@
             // loginPanel
             // 
             this.loginPanel.BackColor = System.Drawing.Color.White;
-            this.loginPanel.Controls.Add(this.loginFormPanel);
+            this.loginPanel.Controls.Add(this.pnlLoginForm);
             this.loginPanel.Controls.Add(this.loginImagePanel);
             this.loginPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.loginPanel.Location = new System.Drawing.Point(0, 0);
@@ -59,22 +57,20 @@
             this.loginPanel.Size = new System.Drawing.Size(920, 650);
             this.loginPanel.TabIndex = 0;
             // 
-            // loginFormPanel
+            // pnlLoginForm
             // 
-            this.loginFormPanel.BackColor = System.Drawing.Color.White;
-            this.loginFormPanel.Controls.Add(this.picLogo);
-            this.loginFormPanel.Controls.Add(this.btnCloseWindow);
-            this.loginFormPanel.Controls.Add(this.label1);
-            this.loginFormPanel.Controls.Add(this.btnLogin);
-            this.loginFormPanel.Controls.Add(this.lblLoginPasswordInput);
-            this.loginFormPanel.Controls.Add(this.txtLoginInput);
-            this.loginFormPanel.Controls.Add(this.lblLogin);
-            this.loginFormPanel.Dock = System.Windows.Forms.DockStyle.Right;
-            this.loginFormPanel.Location = new System.Drawing.Point(459, 0);
-            this.loginFormPanel.Name = "loginFormPanel";
-            this.loginFormPanel.Size = new System.Drawing.Size(461, 650);
-            this.loginFormPanel.TabIndex = 1;
-            this.loginFormPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.loginFormPanel_Paint);
+            this.pnlLoginForm.BackColor = System.Drawing.Color.White;
+            this.pnlLoginForm.Controls.Add(this.picLogo);
+            this.pnlLoginForm.Controls.Add(this.lblForgotPassword);
+            this.pnlLoginForm.Controls.Add(this.btnLogin);
+            this.pnlLoginForm.Controls.Add(this.lblLoginPasswordInput);
+            this.pnlLoginForm.Controls.Add(this.txtLoginInput);
+            this.pnlLoginForm.Controls.Add(this.lblLogin);
+            this.pnlLoginForm.Dock = System.Windows.Forms.DockStyle.Right;
+            this.pnlLoginForm.Location = new System.Drawing.Point(459, 0);
+            this.pnlLoginForm.Name = "pnlLoginForm";
+            this.pnlLoginForm.Size = new System.Drawing.Size(461, 650);
+            this.pnlLoginForm.TabIndex = 1;
             // 
             // picLogo
             // 
@@ -87,25 +83,15 @@
             this.picLogo.TabIndex = 7;
             this.picLogo.TabStop = false;
             // 
-            // btnCloseWindow
+            // lblForgotPassword
             // 
-            this.btnCloseWindow.Image = ((System.Drawing.Image)(resources.GetObject("btnCloseWindow.Image")));
-            this.btnCloseWindow.Location = new System.Drawing.Point(431, 3);
-            this.btnCloseWindow.Name = "btnCloseWindow";
-            this.btnCloseWindow.Size = new System.Drawing.Size(27, 26);
-            this.btnCloseWindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.btnCloseWindow.TabIndex = 5;
-            this.btnCloseWindow.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
-            this.label1.Location = new System.Drawing.Point(65, 407);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(145, 26);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "Forgot Password?";
+            this.lblForgotPassword.Font = new System.Drawing.Font("Segoe UI", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblForgotPassword.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(192)))));
+            this.lblForgotPassword.Location = new System.Drawing.Point(65, 407);
+            this.lblForgotPassword.Name = "lblForgotPassword";
+            this.lblForgotPassword.Size = new System.Drawing.Size(145, 26);
+            this.lblForgotPassword.TabIndex = 5;
+            this.lblForgotPassword.Text = "Forgot Password?";
             // 
             // btnLogin
             // 
@@ -227,14 +213,13 @@
             this.ClientSize = new System.Drawing.Size(920, 650);
             this.Controls.Add(this.loginPanel);
             this.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "loginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             this.loginPanel.ResumeLayout(false);
-            this.loginFormPanel.ResumeLayout(false);
+            this.pnlLoginForm.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.btnCloseWindow)).EndInit();
             this.loginImagePanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.loginLeftPicture)).EndInit();
             this.ResumeLayout(false);
@@ -246,13 +231,12 @@
         private System.Windows.Forms.Panel loginPanel;
         private System.Windows.Forms.Panel loginImagePanel;
         private System.Windows.Forms.PictureBox loginLeftPicture;
-        private System.Windows.Forms.Panel loginFormPanel;
+        private System.Windows.Forms.Panel pnlLoginForm;
         private System.Windows.Forms.Label lblLogin;
         private MaterialSkin.Controls.MaterialTextBox2 txtLoginInput;
         private MaterialSkin.Controls.MaterialTextBox2 lblLoginPasswordInput;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label lblForgotPassword;
         private MaterialSkin.Controls.MaterialButton btnLogin;
-        private System.Windows.Forms.PictureBox btnCloseWindow;
         private System.Windows.Forms.PictureBox picLogo;
     }
 }

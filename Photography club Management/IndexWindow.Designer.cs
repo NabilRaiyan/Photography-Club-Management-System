@@ -501,7 +501,6 @@
             this.btnLogin.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLogin.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
             this.btnLogin.UseVisualStyleBackColor = false;
-            this.btnLogin.Click += new System.EventHandler(this.btnLogin_Click);
             // 
             // picBoxIndexHeading
             // 

@@ -17,11 +17,7 @@ namespace Photography_club_Management
             InitializeComponent();
         }
 
-        private void loginFormPanel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
+     
         
     }
 }
