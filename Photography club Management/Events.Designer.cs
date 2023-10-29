@@ -212,7 +212,7 @@
             // 
             this.label4.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(654, 7);
+            this.label4.Location = new System.Drawing.Point(666, 10);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 24);
             this.label4.TabIndex = 2;
@@ -261,7 +261,7 @@
             this.lblEventLocationHeading.ForeColor = System.Drawing.Color.White;
             this.lblEventLocationHeading.Location = new System.Drawing.Point(642, 5);
             this.lblEventLocationHeading.Name = "lblEventLocationHeading";
-            this.lblEventLocationHeading.Size = new System.Drawing.Size(142, 25);
+            this.lblEventLocationHeading.Size = new System.Drawing.Size(181, 25);
             this.lblEventLocationHeading.TabIndex = 5;
             this.lblEventLocationHeading.Text = "EVENT LOCATION";
             this.lblEventLocationHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -366,7 +366,7 @@
             // 
             this.lblEventLocation.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblEventLocation.ForeColor = System.Drawing.Color.Blue;
-            this.lblEventLocation.Location = new System.Drawing.Point(654, 7);
+            this.lblEventLocation.Location = new System.Drawing.Point(666, 10);
             this.lblEventLocation.Name = "lblEventLocation";
             this.lblEventLocation.Size = new System.Drawing.Size(126, 24);
             this.lblEventLocation.TabIndex = 2;

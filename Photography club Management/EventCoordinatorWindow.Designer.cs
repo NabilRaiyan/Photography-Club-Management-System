@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EventCoordinatorWindow));
             this.pnlEventCoordinatorWindow = new System.Windows.Forms.Panel();
+            this.pnlBottomBorder = new System.Windows.Forms.Panel();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnNotifications = new FontAwesome.Sharp.IconButton();
             this.btnPaySlip = new FontAwesome.Sharp.IconButton();
@@ -40,15 +41,16 @@
             this.pnlActiveMenu = new System.Windows.Forms.Panel();
             this.btnTrackAttendance = new FontAwesome.Sharp.IconButton();
             this.btnEvents = new FontAwesome.Sharp.IconButton();
-            this.btnEventBudget = new FontAwesome.Sharp.IconButton();
+            this.btnEventsBudget = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.pnlProfile = new System.Windows.Forms.Panel();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
-            this.pnlBottomBorder = new System.Windows.Forms.Panel();
+            this.attendance = new Photography_club_Management.Attendance();
+            this.eventsBudget = new Photography_club_Management.EventsBudget();
+            this.eventsWindows = new Photography_club_Management.EventsWindows();
             this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.eventCoordinatorHome = new Photography_club_Management.EventCoordinatorHome();
-            this.eventsWindows = new Photography_club_Management.EventsWindows();
             this.pnlEventCoordinatorWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -58,6 +60,8 @@
             // 
             // pnlEventCoordinatorWindow
             // 
+            this.pnlEventCoordinatorWindow.Controls.Add(this.attendance);
+            this.pnlEventCoordinatorWindow.Controls.Add(this.eventsBudget);
             this.pnlEventCoordinatorWindow.Controls.Add(this.eventsWindows);
             this.pnlEventCoordinatorWindow.Controls.Add(this.notificationsWindow);
             this.pnlEventCoordinatorWindow.Controls.Add(this.eventCoordinatorHome);
@@ -73,6 +77,15 @@
             this.pnlEventCoordinatorWindow.Name = "pnlEventCoordinatorWindow";
             this.pnlEventCoordinatorWindow.Size = new System.Drawing.Size(1300, 821);
             this.pnlEventCoordinatorWindow.TabIndex = 0;
+            // 
+            // pnlBottomBorder
+            // 
+            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlBottomBorder.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlBottomBorder.Location = new System.Drawing.Point(220, 805);
+            this.pnlBottomBorder.Name = "pnlBottomBorder";
+            this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 16);
+            this.pnlBottomBorder.TabIndex = 12;
             // 
             // btnLogout
             // 
@@ -178,7 +191,7 @@
             this.pnlMenu.Controls.Add(this.pnlActiveMenu);
             this.pnlMenu.Controls.Add(this.btnTrackAttendance);
             this.pnlMenu.Controls.Add(this.btnEvents);
-            this.pnlMenu.Controls.Add(this.btnEventBudget);
+            this.pnlMenu.Controls.Add(this.btnEventsBudget);
             this.pnlMenu.Controls.Add(this.btnHome);
             this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlMenu.Location = new System.Drawing.Point(0, 171);
@@ -214,6 +227,7 @@
             this.btnTrackAttendance.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnTrackAttendance.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnTrackAttendance.UseVisualStyleBackColor = true;
+            this.btnTrackAttendance.Click += new System.EventHandler(this.btnTrackAttendance_Click);
             // 
             // btnEvents
             // 
@@ -237,26 +251,27 @@
             this.btnEvents.UseVisualStyleBackColor = true;
             this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
             // 
-            // btnEventBudget
+            // btnEventsBudget
             // 
-            this.btnEventBudget.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnEventBudget.FlatAppearance.BorderSize = 0;
-            this.btnEventBudget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEventBudget.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEventBudget.ForeColor = System.Drawing.Color.White;
-            this.btnEventBudget.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
-            this.btnEventBudget.IconColor = System.Drawing.Color.White;
-            this.btnEventBudget.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnEventBudget.IconSize = 32;
-            this.btnEventBudget.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEventBudget.Location = new System.Drawing.Point(12, 233);
-            this.btnEventBudget.Name = "btnEventBudget";
-            this.btnEventBudget.Size = new System.Drawing.Size(199, 36);
-            this.btnEventBudget.TabIndex = 3;
-            this.btnEventBudget.Text = "Event Budget";
-            this.btnEventBudget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnEventBudget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEventBudget.UseVisualStyleBackColor = true;
+            this.btnEventsBudget.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnEventsBudget.FlatAppearance.BorderSize = 0;
+            this.btnEventsBudget.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEventsBudget.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEventsBudget.ForeColor = System.Drawing.Color.White;
+            this.btnEventsBudget.IconChar = FontAwesome.Sharp.IconChar.DollarSign;
+            this.btnEventsBudget.IconColor = System.Drawing.Color.White;
+            this.btnEventsBudget.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnEventsBudget.IconSize = 32;
+            this.btnEventsBudget.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEventsBudget.Location = new System.Drawing.Point(12, 233);
+            this.btnEventsBudget.Name = "btnEventsBudget";
+            this.btnEventsBudget.Size = new System.Drawing.Size(205, 36);
+            this.btnEventsBudget.TabIndex = 3;
+            this.btnEventsBudget.Text = "Events Budget";
+            this.btnEventsBudget.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnEventsBudget.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEventsBudget.UseVisualStyleBackColor = true;
+            this.btnEventsBudget.Click += new System.EventHandler(this.btnEventsBudget_Click);
             // 
             // btnHome
             // 
@@ -311,14 +326,29 @@
             this.picBoxUser.TabIndex = 0;
             this.picBoxUser.TabStop = false;
             // 
-            // pnlBottomBorder
+            // attendance
             // 
-            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlBottomBorder.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlBottomBorder.Location = new System.Drawing.Point(220, 805);
-            this.pnlBottomBorder.Name = "pnlBottomBorder";
-            this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 16);
-            this.pnlBottomBorder.TabIndex = 12;
+            this.attendance.BackColor = System.Drawing.Color.White;
+            this.attendance.Location = new System.Drawing.Point(220, 70);
+            this.attendance.Name = "attendance";
+            this.attendance.Size = new System.Drawing.Size(1080, 729);
+            this.attendance.TabIndex = 17;
+            // 
+            // eventsBudget
+            // 
+            this.eventsBudget.BackColor = System.Drawing.Color.White;
+            this.eventsBudget.Location = new System.Drawing.Point(223, 70);
+            this.eventsBudget.Name = "eventsBudget";
+            this.eventsBudget.Size = new System.Drawing.Size(1072, 729);
+            this.eventsBudget.TabIndex = 16;
+            // 
+            // eventsWindows
+            // 
+            this.eventsWindows.BackColor = System.Drawing.Color.White;
+            this.eventsWindows.Location = new System.Drawing.Point(225, 70);
+            this.eventsWindows.Name = "eventsWindows";
+            this.eventsWindows.Size = new System.Drawing.Size(1072, 729);
+            this.eventsWindows.TabIndex = 15;
             // 
             // notificationsWindow
             // 
@@ -335,14 +365,6 @@
             this.eventCoordinatorHome.Name = "eventCoordinatorHome";
             this.eventCoordinatorHome.Size = new System.Drawing.Size(1077, 729);
             this.eventCoordinatorHome.TabIndex = 13;
-            // 
-            // eventsWindows
-            // 
-            this.eventsWindows.BackColor = System.Drawing.Color.White;
-            this.eventsWindows.Location = new System.Drawing.Point(225, 70);
-            this.eventsWindows.Name = "eventsWindows";
-            this.eventsWindows.Size = new System.Drawing.Size(1072, 729);
-            this.eventsWindows.TabIndex = 15;
             // 
             // EventCoordinatorWindow
             // 
@@ -371,7 +393,7 @@
         private System.Windows.Forms.Panel pnlActiveMenu;
         private FontAwesome.Sharp.IconButton btnTrackAttendance;
         private FontAwesome.Sharp.IconButton btnEvents;
-        private FontAwesome.Sharp.IconButton btnEventBudget;
+        private FontAwesome.Sharp.IconButton btnEventsBudget;
         private FontAwesome.Sharp.IconButton btnHome;
         private System.Windows.Forms.Panel pnlProfile;
         private System.Windows.Forms.Label lblUserWelcome;
@@ -385,5 +407,7 @@
         private EventCoordinatorHome eventCoordinatorHome;
         private notificationsWindow notificationsWindow;
         private EventsWindows eventsWindows;
+        private EventsBudget eventsBudget;
+        private Attendance attendance;
     }
 }

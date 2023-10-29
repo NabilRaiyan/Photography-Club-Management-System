@@ -39,5 +39,19 @@ namespace Photography_club_Management
             pnlActiveMenu.Top = btnEvents.Top;
             eventsWindows.BringToFront();
         }
+
+        private void btnEventsBudget_Click(object sender, EventArgs e)
+        {
+            pnlActiveMenu.Height = btnEventsBudget.Height;
+            pnlActiveMenu.Top = btnEventsBudget.Top;
+            eventsBudget.BringToFront();
+        }
+
+        private void btnTrackAttendance_Click(object sender, EventArgs e)
+        {
+            pnlActiveMenu.Height = btnTrackAttendance.Height;
+            pnlActiveMenu.Top = btnTrackAttendance.Top;
+            attendance.BringToFront();
+        }
     }
 }
