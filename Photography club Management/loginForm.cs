@@ -22,19 +22,6 @@ namespace Photography_club_Management
 
         }
 
-        private void txtLoginInput_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLoginPasswordInput_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lblLogin_Click(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
