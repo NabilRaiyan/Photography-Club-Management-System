@@ -62,6 +62,12 @@
     <Reference Include="WindowsBase" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AllPost.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AllPost.Designer.cs">
+      <DependentUpon>AllPost.cs</DependentUpon>
+    </Compile>
     <Compile Include="MarketingHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -178,6 +184,9 @@
     <Compile Include="ResourcesWindow.Designer.cs">
       <DependentUpon>ResourcesWindow.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="AllPost.resx">
+      <DependentUpon>AllPost.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="MarketingHome.resx">
       <DependentUpon>MarketingHome.cs</DependentUpon>
     </EmbeddedResource>

@@ -45,6 +45,10 @@
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.btnAllPosts = new FontAwesome.Sharp.IconButton();
+            this.allPost = new Photography_club_Management.AllPost();
+            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
+            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
+            this.marketingHome = new Photography_club_Management.MarketingHome();
             this.pnlAdvisorWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -54,6 +58,10 @@
             // 
             // pnlAdvisorWindow
             // 
+            this.pnlAdvisorWindow.Controls.Add(this.allPost);
+            this.pnlAdvisorWindow.Controls.Add(this.notificationsWindow);
+            this.pnlAdvisorWindow.Controls.Add(this.photographerEventsShow);
+            this.pnlAdvisorWindow.Controls.Add(this.marketingHome);
             this.pnlAdvisorWindow.Controls.Add(this.btnLogout);
             this.pnlAdvisorWindow.Controls.Add(this.btnNotifications);
             this.pnlAdvisorWindow.Controls.Add(this.btnPaySlip);
@@ -109,6 +117,7 @@
             this.btnNotifications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNotifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNotifications.UseVisualStyleBackColor = false;
+            this.btnNotifications.Click += new System.EventHandler(this.btnNotifications_Click);
             // 
             // btnPaySlip
             // 
@@ -214,6 +223,7 @@
             this.btnEvents.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnEvents.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnEvents.UseVisualStyleBackColor = true;
+            this.btnEvents.Click += new System.EventHandler(this.btnEvents_Click);
             // 
             // btnHome
             // 
@@ -235,6 +245,7 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pnlProfile
             // 
@@ -287,6 +298,39 @@
             this.btnAllPosts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnAllPosts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnAllPosts.UseVisualStyleBackColor = true;
+            this.btnAllPosts.Click += new System.EventHandler(this.btnAllPosts_Click);
+            // 
+            // allPost
+            // 
+            this.allPost.BackColor = System.Drawing.Color.White;
+            this.allPost.Location = new System.Drawing.Point(226, 70);
+            this.allPost.Name = "allPost";
+            this.allPost.Size = new System.Drawing.Size(1070, 729);
+            this.allPost.TabIndex = 21;
+            // 
+            // notificationsWindow
+            // 
+            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
+            this.notificationsWindow.Location = new System.Drawing.Point(678, 86);
+            this.notificationsWindow.Name = "notificationsWindow";
+            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
+            this.notificationsWindow.TabIndex = 20;
+            // 
+            // photographerEventsShow
+            // 
+            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
+            this.photographerEventsShow.Location = new System.Drawing.Point(225, 70);
+            this.photographerEventsShow.Name = "photographerEventsShow";
+            this.photographerEventsShow.Size = new System.Drawing.Size(1071, 729);
+            this.photographerEventsShow.TabIndex = 19;
+            // 
+            // marketingHome
+            // 
+            this.marketingHome.BackColor = System.Drawing.Color.White;
+            this.marketingHome.Location = new System.Drawing.Point(220, 74);
+            this.marketingHome.Name = "marketingHome";
+            this.marketingHome.Size = new System.Drawing.Size(1080, 729);
+            this.marketingHome.TabIndex = 18;
             // 
             // MarketingWindow
             // 
@@ -297,6 +341,7 @@
             this.Controls.Add(this.pnlAdvisorWindow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MarketingWindow";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlAdvisorWindow.ResumeLayout(false);
             this.pnlNavMenu.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
@@ -324,5 +369,9 @@
         private FontAwesome.Sharp.IconButton btnNotifications;
         private FontAwesome.Sharp.IconButton btnLogout;
         private FontAwesome.Sharp.IconButton btnAllPosts;
+        private MarketingHome marketingHome;
+        private PhotographerEventsShow photographerEventsShow;
+        private notificationsWindow notificationsWindow;
+        private AllPost allPost;
     }
 }

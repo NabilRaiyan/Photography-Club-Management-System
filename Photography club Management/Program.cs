@@ -16,7 +16,7 @@ namespace Photography_club_Management
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new EventCoordinatorWindow());
+            Application.Run(new MarketingWindow());
         }
     }
 }
