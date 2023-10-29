@@ -54,8 +54,9 @@
             this.txtRoadNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.cmbCity = new MaterialSkin.Controls.MaterialComboBox();
             this.txtHouseNo = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.txtEventBudget = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.txtEventBudgetDetails = new MaterialSkin.Controls.MaterialMultiLineTextBox();
             this.btnSendEventBudget = new System.Windows.Forms.Button();
+            this.lblEventBudgetDetails = new System.Windows.Forms.Label();
             this.pnlEventCoordinatorHome.SuspendLayout();
             this.pnlUpcommingEvents.SuspendLayout();
             this.pnlShowEvents.SuspendLayout();
@@ -237,8 +238,9 @@
             // pnlEventBudget
             // 
             this.pnlEventBudget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.pnlEventBudget.Controls.Add(this.lblEventBudgetDetails);
             this.pnlEventBudget.Controls.Add(this.btnSendEventBudget);
-            this.pnlEventBudget.Controls.Add(this.txtEventBudget);
+            this.pnlEventBudget.Controls.Add(this.txtEventBudgetDetails);
             this.pnlEventBudget.Controls.Add(this.txtRoadNo);
             this.pnlEventBudget.Controls.Add(this.cmbCity);
             this.pnlEventBudget.Controls.Add(this.txtHouseNo);
@@ -496,20 +498,20 @@
             this.txtHouseNo.UseSystemPasswordChar = false;
             this.txtHouseNo.ValidatingType = null;
             // 
-            // txtEventBudget
+            // txtEventBudgetDetails
             // 
-            this.txtEventBudget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtEventBudget.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtEventBudget.Depth = 0;
-            this.txtEventBudget.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtEventBudget.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.txtEventBudget.Hint = "WRITE ABOUT EVENT BUDGET";
-            this.txtEventBudget.Location = new System.Drawing.Point(40, 401);
-            this.txtEventBudget.MouseState = MaterialSkin.MouseState.HOVER;
-            this.txtEventBudget.Name = "txtEventBudget";
-            this.txtEventBudget.Size = new System.Drawing.Size(272, 169);
-            this.txtEventBudget.TabIndex = 34;
-            this.txtEventBudget.Text = "";
+            this.txtEventBudgetDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.txtEventBudgetDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtEventBudgetDetails.Depth = 0;
+            this.txtEventBudgetDetails.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtEventBudgetDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.txtEventBudgetDetails.Hint = "WRITE ABOUT EVENT BUDGET";
+            this.txtEventBudgetDetails.Location = new System.Drawing.Point(35, 418);
+            this.txtEventBudgetDetails.MouseState = MaterialSkin.MouseState.HOVER;
+            this.txtEventBudgetDetails.Name = "txtEventBudgetDetails";
+            this.txtEventBudgetDetails.Size = new System.Drawing.Size(277, 152);
+            this.txtEventBudgetDetails.TabIndex = 34;
+            this.txtEventBudgetDetails.Text = "";
             // 
             // btnSendEventBudget
             // 
@@ -524,6 +526,17 @@
             this.btnSendEventBudget.TabIndex = 35;
             this.btnSendEventBudget.Text = "SEND BUDGET";
             this.btnSendEventBudget.UseVisualStyleBackColor = false;
+            // 
+            // lblEventBudgetDetails
+            // 
+            this.lblEventBudgetDetails.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEventBudgetDetails.ForeColor = System.Drawing.Color.Black;
+            this.lblEventBudgetDetails.Location = new System.Drawing.Point(32, 393);
+            this.lblEventBudgetDetails.Name = "lblEventBudgetDetails";
+            this.lblEventBudgetDetails.Size = new System.Drawing.Size(158, 18);
+            this.lblEventBudgetDetails.TabIndex = 36;
+            this.lblEventBudgetDetails.Text = "WRITE ABOUT EVENT BUDGET";
+            this.lblEventBudgetDetails.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // EventCoordinatorHome
             // 
@@ -570,7 +583,8 @@
         private MaterialSkin.Controls.MaterialMaskedTextBox txtRoadNo;
         private MaterialSkin.Controls.MaterialComboBox cmbCity;
         private MaterialSkin.Controls.MaterialMaskedTextBox txtHouseNo;
-        private MaterialSkin.Controls.MaterialMultiLineTextBox txtEventBudget;
+        private MaterialSkin.Controls.MaterialMultiLineTextBox txtEventBudgetDetails;
         private System.Windows.Forms.Button btnSendEventBudget;
+        private System.Windows.Forms.Label lblEventBudgetDetails;
     }
 }

@@ -46,6 +46,7 @@
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.pnlBottomBorder = new System.Windows.Forms.Panel();
+            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.eventCoordinatorHome = new Photography_club_Management.EventCoordinatorHome();
             this.pnlEventCoordinatorWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
@@ -56,6 +57,7 @@
             // 
             // pnlEventCoordinatorWindow
             // 
+            this.pnlEventCoordinatorWindow.Controls.Add(this.notificationsWindow);
             this.pnlEventCoordinatorWindow.Controls.Add(this.eventCoordinatorHome);
             this.pnlEventCoordinatorWindow.Controls.Add(this.pnlBottomBorder);
             this.pnlEventCoordinatorWindow.Controls.Add(this.btnLogout);
@@ -112,6 +114,7 @@
             this.btnNotifications.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnNotifications.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnNotifications.UseVisualStyleBackColor = false;
+            this.btnNotifications.Click += new System.EventHandler(this.btnNotifications_Click);
             // 
             // btnPaySlip
             // 
@@ -272,6 +275,7 @@
             this.btnHome.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnHome.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnHome.UseVisualStyleBackColor = true;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
             // pnlProfile
             // 
@@ -312,6 +316,14 @@
             this.pnlBottomBorder.Name = "pnlBottomBorder";
             this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 16);
             this.pnlBottomBorder.TabIndex = 12;
+            // 
+            // notificationsWindow
+            // 
+            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
+            this.notificationsWindow.Location = new System.Drawing.Point(652, 88);
+            this.notificationsWindow.Name = "notificationsWindow";
+            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
+            this.notificationsWindow.TabIndex = 14;
             // 
             // eventCoordinatorHome
             // 
@@ -360,5 +372,6 @@
         private FontAwesome.Sharp.IconButton btnLogout;
         private System.Windows.Forms.Panel pnlBottomBorder;
         private EventCoordinatorHome eventCoordinatorHome;
+        private notificationsWindow notificationsWindow;
     }
 }

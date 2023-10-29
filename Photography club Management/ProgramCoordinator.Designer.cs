@@ -413,7 +413,6 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "Dashboard";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Load += new System.EventHandler(this.Dashboard_Load);
             this.pnlNavMenu.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
             this.pnlProfile.ResumeLayout(false);

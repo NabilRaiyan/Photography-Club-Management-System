@@ -65,9 +65,6 @@ namespace Photography_club_Management
             notificationsWindow.Show();
         }
 
-        private void Dashboard_Load(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
