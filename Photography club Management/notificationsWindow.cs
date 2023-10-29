@@ -22,6 +22,9 @@ namespace Photography_club_Management
             this.Hide();
         }
 
-        
+        private void notificationsWindow_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

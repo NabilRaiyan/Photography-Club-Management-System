@@ -106,7 +106,7 @@
             this.txtSearchEvents.Hint = "SEARCH EVENTS BY DATE";
             this.txtSearchEvents.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtSearchEvents.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearchEvents.LeadingIcon")));
-            this.txtSearchEvents.Location = new System.Drawing.Point(17, 69);
+            this.txtSearchEvents.Location = new System.Drawing.Point(6, 69);
             this.txtSearchEvents.Mask = "";
             this.txtSearchEvents.MaxLength = 32767;
             this.txtSearchEvents.MouseState = MaterialSkin.MouseState.OUT;

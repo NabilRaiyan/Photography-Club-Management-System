@@ -133,7 +133,7 @@
             // 
             this.lblIndexHeading.BackColor = System.Drawing.Color.Transparent;
             this.lblIndexHeading.Font = new System.Drawing.Font("Century Gothic", 19.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblIndexHeading.ForeColor = System.Drawing.Color.Black;
+            this.lblIndexHeading.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.lblIndexHeading.Location = new System.Drawing.Point(240, 221);
             this.lblIndexHeading.Name = "lblIndexHeading";
             this.lblIndexHeading.Size = new System.Drawing.Size(710, 52);

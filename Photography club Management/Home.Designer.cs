@@ -71,6 +71,7 @@
             this.lblHome.Size = new System.Drawing.Size(140, 34);
             this.lblHome.TabIndex = 0;
             this.lblHome.Text = "Home";
+            this.lblHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // pnlHome
             // 
@@ -235,7 +236,7 @@
             // 
             // pnlUpcommingEvents
             // 
-            this.pnlUpcommingEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(229)))), ((int)(((byte)(229)))), ((int)(((byte)(229)))));
+            this.pnlUpcommingEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.pnlUpcommingEvents.Controls.Add(this.pnlShowEvents);
             this.pnlUpcommingEvents.Controls.Add(this.pnlEventNews);
             this.pnlUpcommingEvents.Location = new System.Drawing.Point(389, 331);

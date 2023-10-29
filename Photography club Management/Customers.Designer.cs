@@ -78,7 +78,7 @@
             // pnlSearchClient
             // 
             this.pnlSearchClient.Controls.Add(this.txtSearchCustomer);
-            this.pnlSearchClient.Location = new System.Drawing.Point(17, 69);
+            this.pnlSearchClient.Location = new System.Drawing.Point(6, 69);
             this.pnlSearchClient.Name = "pnlSearchClient";
             this.pnlSearchClient.Size = new System.Drawing.Size(711, 48);
             this.pnlSearchClient.TabIndex = 14;

@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ResourcesWindow));
-            this.lblCustomer = new System.Windows.Forms.Label();
+            this.lblResources = new System.Windows.Forms.Label();
             this.pnlResources = new System.Windows.Forms.Panel();
             this.txtSearchUploadedResources = new MaterialSkin.Controls.MaterialMaskedTextBox();
             this.pnlAllUploadedResources = new System.Windows.Forms.Panel();
@@ -74,21 +74,21 @@
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUploadPhoto)).BeginInit();
             this.SuspendLayout();
             // 
-            // lblCustomer
+            // lblResources
             // 
-            this.lblCustomer.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCustomer.Location = new System.Drawing.Point(460, 12);
-            this.lblCustomer.Name = "lblCustomer";
-            this.lblCustomer.Size = new System.Drawing.Size(155, 34);
-            this.lblCustomer.TabIndex = 2;
-            this.lblCustomer.Text = "Resources";
+            this.lblResources.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblResources.Location = new System.Drawing.Point(460, 12);
+            this.lblResources.Name = "lblResources";
+            this.lblResources.Size = new System.Drawing.Size(155, 34);
+            this.lblResources.TabIndex = 2;
+            this.lblResources.Text = "Resources";
             // 
             // pnlResources
             // 
             this.pnlResources.Controls.Add(this.txtSearchUploadedResources);
             this.pnlResources.Controls.Add(this.pnlAllUploadedResources);
             this.pnlResources.Controls.Add(this.pnlUploadResources);
-            this.pnlResources.Controls.Add(this.lblCustomer);
+            this.pnlResources.Controls.Add(this.lblResources);
             this.pnlResources.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlResources.Font = new System.Drawing.Font("Century Gothic", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.pnlResources.Location = new System.Drawing.Point(0, 0);
@@ -563,7 +563,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblCustomer;
+        private System.Windows.Forms.Label lblResources;
         private System.Windows.Forms.Panel pnlResources;
         private System.Windows.Forms.Panel pnlUploadResources;
         private System.Windows.Forms.Label lblUploadResources;

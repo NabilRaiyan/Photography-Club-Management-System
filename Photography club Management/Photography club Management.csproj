@@ -98,6 +98,18 @@
     <Compile Include="notificationsWindow.Designer.cs">
       <DependentUpon>notificationsWindow.cs</DependentUpon>
     </Compile>
+    <Compile Include="PhotographerHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PhotographerHome.Designer.cs">
+      <DependentUpon>PhotographerHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PhotographerWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="PhotographerWindow.Designer.cs">
+      <DependentUpon>PhotographerWindow.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProgramCoordinator.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +147,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="notificationsWindow.resx">
       <DependentUpon>notificationsWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotographerHome.resx">
+      <DependentUpon>PhotographerHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PhotographerWindow.resx">
+      <DependentUpon>PhotographerWindow.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProgramCoordinator.resx">
       <DependentUpon>ProgramCoordinator.cs</DependentUpon>

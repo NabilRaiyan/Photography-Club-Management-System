@@ -58,5 +58,7 @@ namespace Photography_club_Management
                 System.Windows.MessageBox.Show("Upload Unsuccessful", "Error", MessageBoxButton.OKCancel);
             }
         }
+
+        
     }
 }

@@ -33,13 +33,13 @@
             this.btnCloseNotification = new FontAwesome.Sharp.IconButton();
             this.lblNotification = new System.Windows.Forms.Label();
             this.pnlEventNews = new System.Windows.Forms.Panel();
+            this.lblSendBy = new System.Windows.Forms.Label();
             this.pictureBoxSenderImage = new System.Windows.Forms.PictureBox();
             this.btnDeleteNotification = new FontAwesome.Sharp.IconButton();
             this.lblNotificationTime = new System.Windows.Forms.Label();
             this.lblSenderName = new System.Windows.Forms.Label();
             this.lblEventDetails = new System.Windows.Forms.Label();
             this.lblNotificationDate = new System.Windows.Forms.Label();
-            this.lblSendBy = new System.Windows.Forms.Label();
             this.pnlNotificationHeader.SuspendLayout();
             this.pnlEventNews.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSenderImage)).BeginInit();
@@ -97,6 +97,17 @@
             this.pnlEventNews.Name = "pnlEventNews";
             this.pnlEventNews.Size = new System.Drawing.Size(569, 124);
             this.pnlEventNews.TabIndex = 1;
+            // 
+            // lblSendBy
+            // 
+            this.lblSendBy.BackColor = System.Drawing.Color.Cyan;
+            this.lblSendBy.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSendBy.ForeColor = System.Drawing.Color.Purple;
+            this.lblSendBy.Location = new System.Drawing.Point(101, 93);
+            this.lblSendBy.Name = "lblSendBy";
+            this.lblSendBy.Size = new System.Drawing.Size(75, 21);
+            this.lblSendBy.TabIndex = 9;
+            this.lblSendBy.Text = "member";
             // 
             // pictureBoxSenderImage
             // 
@@ -162,17 +173,6 @@
             this.lblNotificationDate.TabIndex = 8;
             this.lblNotificationDate.Text = "10-2-2023";
             // 
-            // lblSendBy
-            // 
-            this.lblSendBy.BackColor = System.Drawing.Color.Cyan;
-            this.lblSendBy.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSendBy.ForeColor = System.Drawing.Color.Purple;
-            this.lblSendBy.Location = new System.Drawing.Point(101, 93);
-            this.lblSendBy.Name = "lblSendBy";
-            this.lblSendBy.Size = new System.Drawing.Size(75, 21);
-            this.lblSendBy.TabIndex = 9;
-            this.lblSendBy.Text = "member";
-            // 
             // notificationsWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -183,6 +183,7 @@
             this.Controls.Add(this.pnlNotificationHeader);
             this.Name = "notificationsWindow";
             this.Size = new System.Drawing.Size(600, 500);
+            this.Load += new System.EventHandler(this.notificationsWindow_Load);
             this.pnlNotificationHeader.ResumeLayout(false);
             this.pnlEventNews.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxSenderImage)).EndInit();

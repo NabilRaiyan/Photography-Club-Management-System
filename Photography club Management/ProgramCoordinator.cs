@@ -21,12 +21,6 @@ namespace Photography_club_Management
             
         }
 
-        private void iconCloseWindow_Click(object sender, EventArgs e)
-        {
-            this.Close();
-            
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
             pnlActiveMenu.Height = btnHome.Height;
@@ -71,6 +65,9 @@ namespace Photography_club_Management
             notificationsWindow.Show();
         }
 
-        
+        private void Dashboard_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
