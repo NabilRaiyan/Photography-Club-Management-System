@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhotographerEventsShow));
             this.pnlPhotographerEventShow = new System.Windows.Forms.Panel();
+            this.lblEvents = new System.Windows.Forms.Label();
             this.pnlAllEvents = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
@@ -50,7 +51,6 @@
             this.lblEventLocation = new System.Windows.Forms.Label();
             this.lblEventName = new System.Windows.Forms.Label();
             this.txtSearchEvents = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.lblEvents = new System.Windows.Forms.Label();
             this.pnlPhotographerEventShow.SuspendLayout();
             this.pnlAllEvents.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -68,9 +68,19 @@
             this.pnlPhotographerEventShow.Size = new System.Drawing.Size(1080, 729);
             this.pnlPhotographerEventShow.TabIndex = 0;
             // 
+            // lblEvents
+            // 
+            this.lblEvents.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEvents.Location = new System.Drawing.Point(470, 12);
+            this.lblEvents.Name = "lblEvents";
+            this.lblEvents.Size = new System.Drawing.Size(140, 34);
+            this.lblEvents.TabIndex = 13;
+            this.lblEvents.Text = "Events";
+            this.lblEvents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // pnlAllEvents
             // 
-            this.pnlAllEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlAllEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
             this.pnlAllEvents.Controls.Add(this.panel1);
             this.pnlAllEvents.Controls.Add(this.pnlEventsHeading);
             this.pnlAllEvents.Controls.Add(this.pnlEventNews);
@@ -328,16 +338,6 @@
             this.txtSearchEvents.TrailingIcon = null;
             this.txtSearchEvents.UseSystemPasswordChar = false;
             this.txtSearchEvents.ValidatingType = null;
-            // 
-            // lblEvents
-            // 
-            this.lblEvents.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEvents.Location = new System.Drawing.Point(470, 12);
-            this.lblEvents.Name = "lblEvents";
-            this.lblEvents.Size = new System.Drawing.Size(140, 34);
-            this.lblEvents.TabIndex = 13;
-            this.lblEvents.Text = "Events";
-            this.lblEvents.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // PhotographerEventsShow
             // 
