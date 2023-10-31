@@ -60,6 +60,7 @@
             // 
             // pnlPhotographerEventShow
             // 
+            this.pnlPhotographerEventShow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
             this.pnlPhotographerEventShow.Controls.Add(this.lblEvents);
             this.pnlPhotographerEventShow.Controls.Add(this.pnlAllEvents);
             this.pnlPhotographerEventShow.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -71,6 +72,7 @@
             // lblEvents
             // 
             this.lblEvents.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblEvents.ForeColor = System.Drawing.Color.White;
             this.lblEvents.Location = new System.Drawing.Point(470, 12);
             this.lblEvents.Name = "lblEvents";
             this.lblEvents.Size = new System.Drawing.Size(140, 34);
@@ -81,6 +83,7 @@
             // pnlAllEvents
             // 
             this.pnlAllEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
+            this.pnlAllEvents.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlAllEvents.Controls.Add(this.panel1);
             this.pnlAllEvents.Controls.Add(this.pnlEventsHeading);
             this.pnlAllEvents.Controls.Add(this.pnlEventNews);
@@ -170,7 +173,7 @@
             this.pnlEventsHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEventsHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlEventsHeading.Name = "pnlEventsHeading";
-            this.pnlEventsHeading.Size = new System.Drawing.Size(1080, 37);
+            this.pnlEventsHeading.Size = new System.Drawing.Size(1076, 37);
             this.pnlEventsHeading.TabIndex = 3;
             // 
             // lblEventOrganizerId

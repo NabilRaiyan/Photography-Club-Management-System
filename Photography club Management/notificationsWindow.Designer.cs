@@ -47,10 +47,11 @@
             // 
             // pnlNotificationHeader
             // 
-            this.pnlNotificationHeader.BackColor = System.Drawing.Color.MistyRose;
+            this.pnlNotificationHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.pnlNotificationHeader.Controls.Add(this.btnCloseNotification);
             this.pnlNotificationHeader.Controls.Add(this.lblNotification);
             this.pnlNotificationHeader.Dock = System.Windows.Forms.DockStyle.Top;
+            this.pnlNotificationHeader.ForeColor = System.Drawing.Color.White;
             this.pnlNotificationHeader.Location = new System.Drawing.Point(0, 0);
             this.pnlNotificationHeader.Name = "pnlNotificationHeader";
             this.pnlNotificationHeader.Size = new System.Drawing.Size(600, 44);
@@ -62,7 +63,7 @@
             this.btnCloseNotification.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCloseNotification.Font = new System.Drawing.Font("Century Gothic", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnCloseNotification.IconChar = FontAwesome.Sharp.IconChar.Xmark;
-            this.btnCloseNotification.IconColor = System.Drawing.Color.Black;
+            this.btnCloseNotification.IconColor = System.Drawing.Color.White;
             this.btnCloseNotification.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnCloseNotification.IconSize = 32;
             this.btnCloseNotification.Location = new System.Drawing.Point(548, 3);
@@ -102,7 +103,7 @@
             // 
             this.lblSendBy.BackColor = System.Drawing.Color.Cyan;
             this.lblSendBy.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSendBy.ForeColor = System.Drawing.Color.Purple;
+            this.lblSendBy.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.lblSendBy.Location = new System.Drawing.Point(101, 93);
             this.lblSendBy.Name = "lblSendBy";
             this.lblSendBy.Size = new System.Drawing.Size(75, 21);
@@ -137,7 +138,7 @@
             // lblNotificationTime
             // 
             this.lblNotificationTime.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNotificationTime.ForeColor = System.Drawing.Color.Blue;
+            this.lblNotificationTime.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.lblNotificationTime.Location = new System.Drawing.Point(20, 94);
             this.lblNotificationTime.Name = "lblNotificationTime";
             this.lblNotificationTime.Size = new System.Drawing.Size(83, 28);
@@ -147,6 +148,7 @@
             // lblSenderName
             // 
             this.lblSenderName.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSenderName.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.lblSenderName.Location = new System.Drawing.Point(100, 9);
             this.lblSenderName.Name = "lblSenderName";
             this.lblSenderName.Size = new System.Drawing.Size(164, 28);
@@ -167,6 +169,7 @@
             // lblNotificationDate
             // 
             this.lblNotificationDate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNotificationDate.ForeColor = System.Drawing.Color.White;
             this.lblNotificationDate.Location = new System.Drawing.Point(17, 56);
             this.lblNotificationDate.Name = "lblNotificationDate";
             this.lblNotificationDate.Size = new System.Drawing.Size(81, 23);
@@ -177,7 +180,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackColor = System.Drawing.Color.SeaShell;
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.Controls.Add(this.lblNotificationDate);
             this.Controls.Add(this.pnlEventNews);
             this.Controls.Add(this.pnlNotificationHeader);

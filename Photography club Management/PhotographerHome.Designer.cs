@@ -60,7 +60,7 @@
             // 
             // pnlPhotographerHome
             // 
-            this.pnlPhotographerHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(73)))));
+            this.pnlPhotographerHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
             this.pnlPhotographerHome.Controls.Add(this.pnlUploadResources);
             this.pnlPhotographerHome.Controls.Add(this.lblUpcommingEvents);
             this.pnlPhotographerHome.Controls.Add(this.pnlUpcommingEvents);
@@ -74,7 +74,8 @@
             // 
             // pnlUploadResources
             // 
-            this.pnlUploadResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(73)))));
+            this.pnlUploadResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlUploadResources.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlUploadResources.Controls.Add(this.btnClearFileField);
             this.pnlUploadResources.Controls.Add(this.btnClearPhotoField);
             this.pnlUploadResources.Controls.Add(this.lblUploadedFileLink);
@@ -213,7 +214,8 @@
             // 
             // pnlUpcommingEvents
             // 
-            this.pnlUpcommingEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(33)))), ((int)(((byte)(73)))));
+            this.pnlUpcommingEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlUpcommingEvents.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlUpcommingEvents.Controls.Add(this.pnlShowEvents);
             this.pnlUpcommingEvents.Controls.Add(this.pnlEventNews);
             this.pnlUpcommingEvents.Location = new System.Drawing.Point(389, 331);
@@ -224,11 +226,12 @@
             // pnlShowEvents
             // 
             this.pnlShowEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlShowEvents.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.pnlShowEvents.Controls.Add(this.btnShowAllUpcommingEvents);
             this.pnlShowEvents.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlShowEvents.Location = new System.Drawing.Point(0, 343);
+            this.pnlShowEvents.Location = new System.Drawing.Point(0, 339);
             this.pnlShowEvents.Name = "pnlShowEvents";
-            this.pnlShowEvents.Size = new System.Drawing.Size(669, 35);
+            this.pnlShowEvents.Size = new System.Drawing.Size(665, 35);
             this.pnlShowEvents.TabIndex = 2;
             // 
             // btnShowAllUpcommingEvents

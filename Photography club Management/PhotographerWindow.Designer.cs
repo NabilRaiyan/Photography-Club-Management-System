@@ -45,10 +45,10 @@
             this.pnlProfile = new System.Windows.Forms.Panel();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
+            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
             this.photographerGallery = new Photography_club_Management.PhotographerGallery();
             this.photographerHome = new Photography_club_Management.PhotographerHome();
             this.notificationsWindow = new Photography_club_Management.notificationsWindow();
-            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
             this.pnlPhotographerWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -77,7 +77,7 @@
             // 
             // pnlBottomBorder
             // 
-            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.pnlBottomBorder.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pnlBottomBorder.Location = new System.Drawing.Point(220, 805);
             this.pnlBottomBorder.Name = "pnlBottomBorder";
@@ -165,7 +165,7 @@
             // 
             // pnlWindowControl
             // 
-            this.pnlWindowControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlWindowControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.pnlWindowControl.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlWindowControl.Location = new System.Drawing.Point(220, 0);
             this.pnlWindowControl.Name = "pnlWindowControl";
@@ -185,6 +185,7 @@
             // 
             // pnlMenu
             // 
+            this.pnlMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.pnlMenu.Controls.Add(this.pnlActiveMenu);
             this.pnlMenu.Controls.Add(this.btnEvents);
             this.pnlMenu.Controls.Add(this.btnPhotographerGallery);
@@ -197,7 +198,7 @@
             // 
             // pnlActiveMenu
             // 
-            this.pnlActiveMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
+            this.pnlActiveMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(85)))), ((int)(((byte)(72)))), ((int)(((byte)(133)))));
             this.pnlActiveMenu.Location = new System.Drawing.Point(0, 188);
             this.pnlActiveMenu.Name = "pnlActiveMenu";
             this.pnlActiveMenu.Size = new System.Drawing.Size(10, 40);
@@ -208,7 +209,7 @@
             this.btnEvents.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnEvents.FlatAppearance.BorderSize = 0;
             this.btnEvents.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEvents.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEvents.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnEvents.ForeColor = System.Drawing.Color.White;
             this.btnEvents.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
             this.btnEvents.IconColor = System.Drawing.Color.White;
@@ -230,7 +231,7 @@
             this.btnPhotographerGallery.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnPhotographerGallery.FlatAppearance.BorderSize = 0;
             this.btnPhotographerGallery.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnPhotographerGallery.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPhotographerGallery.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnPhotographerGallery.ForeColor = System.Drawing.Color.White;
             this.btnPhotographerGallery.IconChar = FontAwesome.Sharp.IconChar.Images;
             this.btnPhotographerGallery.IconColor = System.Drawing.Color.White;
@@ -252,7 +253,7 @@
             this.btnHome.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.btnHome.FlatAppearance.BorderSize = 0;
             this.btnHome.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnHome.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnHome.ForeColor = System.Drawing.Color.White;
             this.btnHome.IconChar = FontAwesome.Sharp.IconChar.House;
             this.btnHome.IconColor = System.Drawing.Color.White;
@@ -271,6 +272,7 @@
             // 
             // pnlProfile
             // 
+            this.pnlProfile.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
             this.pnlProfile.Controls.Add(this.lblUserWelcome);
             this.pnlProfile.Controls.Add(this.picBoxUser);
             this.pnlProfile.Dock = System.Windows.Forms.DockStyle.Top;
@@ -300,6 +302,15 @@
             this.picBoxUser.TabIndex = 0;
             this.picBoxUser.TabStop = false;
             // 
+            // photographerEventsShow
+            // 
+            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
+            this.photographerEventsShow.ForeColor = System.Drawing.Color.Black;
+            this.photographerEventsShow.Location = new System.Drawing.Point(225, 70);
+            this.photographerEventsShow.Name = "photographerEventsShow";
+            this.photographerEventsShow.Size = new System.Drawing.Size(1072, 729);
+            this.photographerEventsShow.TabIndex = 17;
+            // 
             // photographerGallery
             // 
             this.photographerGallery.BackColor = System.Drawing.Color.White;
@@ -324,14 +335,6 @@
             this.notificationsWindow.Name = "notificationsWindow";
             this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
             this.notificationsWindow.TabIndex = 12;
-            // 
-            // photographerEventsShow
-            // 
-            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
-            this.photographerEventsShow.Location = new System.Drawing.Point(225, 70);
-            this.photographerEventsShow.Name = "photographerEventsShow";
-            this.photographerEventsShow.Size = new System.Drawing.Size(1072, 729);
-            this.photographerEventsShow.TabIndex = 17;
             // 
             // PhotographerWindow
             // 

@@ -209,6 +209,7 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel5.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel5.Controls.Add(this.iconButton10);
             this.panel5.Controls.Add(this.iconButton11);
             this.panel5.Controls.Add(this.pictureBox5);
@@ -254,7 +255,7 @@
             this.pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             this.pictureBox5.Location = new System.Drawing.Point(0, 0);
             this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(226, 153);
+            this.pictureBox5.Size = new System.Drawing.Size(222, 153);
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox5.TabIndex = 2;
             this.pictureBox5.TabStop = false;
@@ -315,6 +316,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel3.Controls.Add(this.iconButton6);
             this.panel3.Controls.Add(this.iconButton7);
             this.panel3.Controls.Add(this.pictureBox3);
@@ -360,7 +362,7 @@
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
             this.pictureBox3.Location = new System.Drawing.Point(0, 0);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(226, 153);
+            this.pictureBox3.Size = new System.Drawing.Size(222, 153);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox3.TabIndex = 2;
             this.pictureBox3.TabStop = false;
@@ -368,6 +370,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.panel2.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.panel2.Controls.Add(this.iconButton4);
             this.panel2.Controls.Add(this.iconButton5);
             this.panel2.Controls.Add(this.pictureBox2);
@@ -413,7 +416,7 @@
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
             this.pictureBox2.Location = new System.Drawing.Point(0, 0);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(226, 153);
+            this.pictureBox2.Size = new System.Drawing.Size(222, 153);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 2;
             this.pictureBox2.TabStop = false;
@@ -485,6 +488,7 @@
             // pnlIndexPictureShow
             // 
             this.pnlIndexPictureShow.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.pnlIndexPictureShow.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlIndexPictureShow.Controls.Add(this.iconButton1);
             this.pnlIndexPictureShow.Controls.Add(this.btnDeleteImage);
             this.pnlIndexPictureShow.Controls.Add(this.picBoxDisplayPicture);
@@ -530,7 +534,7 @@
             this.picBoxDisplayPicture.Image = ((System.Drawing.Image)(resources.GetObject("picBoxDisplayPicture.Image")));
             this.picBoxDisplayPicture.Location = new System.Drawing.Point(0, 0);
             this.picBoxDisplayPicture.Name = "picBoxDisplayPicture";
-            this.picBoxDisplayPicture.Size = new System.Drawing.Size(226, 153);
+            this.picBoxDisplayPicture.Size = new System.Drawing.Size(222, 153);
             this.picBoxDisplayPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxDisplayPicture.TabIndex = 2;
             this.picBoxDisplayPicture.TabStop = false;
