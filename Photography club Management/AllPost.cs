@@ -16,5 +16,10 @@ namespace Photography_club_Management
         {
             InitializeComponent();
         }
+
+        private void pnlAllPost_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -30,20 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarketingHome));
             this.pnlAdvisorHome = new System.Windows.Forms.Panel();
-            this.pnlEventBudget = new System.Windows.Forms.Panel();
-            this.lblPostBody = new System.Windows.Forms.Label();
-            this.btnPost = new System.Windows.Forms.Button();
-            this.txtEventBudgetDetails = new MaterialSkin.Controls.MaterialMultiLineTextBox();
-            this.txtPostId = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.txtPostTitle = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.btnClearAll = new System.Windows.Forms.Button();
-            this.lblPost = new System.Windows.Forms.Label();
-            this.lblHome = new System.Windows.Forms.Label();
-            this.checkBoxPostToFacebook = new System.Windows.Forms.CheckBox();
-            this.checkBoxPostToInstagram = new System.Windows.Forms.CheckBox();
-            this.checkBoxPostToTwitter = new System.Windows.Forms.CheckBox();
-            this.lblPostTo = new System.Windows.Forms.Label();
-            this.checkBoxPostToAll = new System.Windows.Forms.CheckBox();
             this.lblRecentPost = new System.Windows.Forms.Label();
             this.pnlRecentPost = new System.Windows.Forms.Panel();
             this.pnlShowEvents = new System.Windows.Forms.Panel();
@@ -54,15 +40,30 @@
             this.lblDate = new System.Windows.Forms.Label();
             this.lblPostTitle = new System.Windows.Forms.Label();
             this.lblPostDetail = new System.Windows.Forms.Label();
+            this.pnlEventBudget = new System.Windows.Forms.Panel();
+            this.checkBoxPostToFacebook = new System.Windows.Forms.CheckBox();
+            this.checkBoxPostToInstagram = new System.Windows.Forms.CheckBox();
+            this.checkBoxPostToTwitter = new System.Windows.Forms.CheckBox();
+            this.lblPostTo = new System.Windows.Forms.Label();
+            this.checkBoxPostToAll = new System.Windows.Forms.CheckBox();
+            this.lblPostBody = new System.Windows.Forms.Label();
+            this.btnPost = new System.Windows.Forms.Button();
+            this.txtEventBudgetDetails = new MaterialSkin.Controls.MaterialMultiLineTextBox();
+            this.txtPostId = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.txtPostTitle = new MaterialSkin.Controls.MaterialMaskedTextBox();
+            this.btnClearAll = new System.Windows.Forms.Button();
+            this.lblPost = new System.Windows.Forms.Label();
+            this.lblHome = new System.Windows.Forms.Label();
             this.pnlAdvisorHome.SuspendLayout();
-            this.pnlEventBudget.SuspendLayout();
             this.pnlRecentPost.SuspendLayout();
             this.pnlShowEvents.SuspendLayout();
             this.pnlEventNews.SuspendLayout();
+            this.pnlEventBudget.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlAdvisorHome
             // 
+            this.pnlAdvisorHome.BackColor = System.Drawing.Color.White;
             this.pnlAdvisorHome.Controls.Add(this.lblRecentPost);
             this.pnlAdvisorHome.Controls.Add(this.pnlRecentPost);
             this.pnlAdvisorHome.Controls.Add(this.pnlEventBudget);
@@ -73,9 +74,124 @@
             this.pnlAdvisorHome.Size = new System.Drawing.Size(1080, 729);
             this.pnlAdvisorHome.TabIndex = 0;
             // 
+            // lblRecentPost
+            // 
+            this.lblRecentPost.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblRecentPost.ForeColor = System.Drawing.Color.Navy;
+            this.lblRecentPost.Location = new System.Drawing.Point(395, 59);
+            this.lblRecentPost.Name = "lblRecentPost";
+            this.lblRecentPost.Size = new System.Drawing.Size(185, 25);
+            this.lblRecentPost.TabIndex = 13;
+            this.lblRecentPost.Text = "RECENT POST";
+            // 
+            // pnlRecentPost
+            // 
+            this.pnlRecentPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlRecentPost.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.pnlRecentPost.Controls.Add(this.pnlShowEvents);
+            this.pnlRecentPost.Controls.Add(this.pnlEventNews);
+            this.pnlRecentPost.Location = new System.Drawing.Point(399, 87);
+            this.pnlRecentPost.Name = "pnlRecentPost";
+            this.pnlRecentPost.Size = new System.Drawing.Size(669, 623);
+            this.pnlRecentPost.TabIndex = 14;
+            // 
+            // pnlShowEvents
+            // 
+            this.pnlShowEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlShowEvents.Controls.Add(this.btnShowAllPost);
+            this.pnlShowEvents.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.pnlShowEvents.Location = new System.Drawing.Point(0, 584);
+            this.pnlShowEvents.Name = "pnlShowEvents";
+            this.pnlShowEvents.Size = new System.Drawing.Size(665, 35);
+            this.pnlShowEvents.TabIndex = 2;
+            // 
+            // btnShowAllPost
+            // 
+            this.btnShowAllPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.btnShowAllPost.FlatAppearance.BorderSize = 0;
+            this.btnShowAllPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowAllPost.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnShowAllPost.ForeColor = System.Drawing.Color.White;
+            this.btnShowAllPost.Location = new System.Drawing.Point(291, 3);
+            this.btnShowAllPost.Name = "btnShowAllPost";
+            this.btnShowAllPost.Size = new System.Drawing.Size(105, 29);
+            this.btnShowAllPost.TabIndex = 1;
+            this.btnShowAllPost.Text = "SHOW ALL";
+            this.btnShowAllPost.UseVisualStyleBackColor = false;
+            // 
+            // pnlEventNews
+            // 
+            this.pnlEventNews.BackColor = System.Drawing.Color.White;
+            this.pnlEventNews.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.pnlEventNews.Controls.Add(this.btnShowPostDetails);
+            this.pnlEventNews.Controls.Add(this.lblPostedTime);
+            this.pnlEventNews.Controls.Add(this.lblDate);
+            this.pnlEventNews.Controls.Add(this.lblPostTitle);
+            this.pnlEventNews.Controls.Add(this.lblPostDetail);
+            this.pnlEventNews.Location = new System.Drawing.Point(9, 16);
+            this.pnlEventNews.Name = "pnlEventNews";
+            this.pnlEventNews.Size = new System.Drawing.Size(646, 123);
+            this.pnlEventNews.TabIndex = 0;
+            // 
+            // btnShowPostDetails
+            // 
+            this.btnShowPostDetails.BackColor = System.Drawing.Color.White;
+            this.btnShowPostDetails.FlatAppearance.BorderSize = 0;
+            this.btnShowPostDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnShowPostDetails.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
+            this.btnShowPostDetails.IconColor = System.Drawing.Color.Navy;
+            this.btnShowPostDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnShowPostDetails.IconSize = 32;
+            this.btnShowPostDetails.Location = new System.Drawing.Point(578, 78);
+            this.btnShowPostDetails.Name = "btnShowPostDetails";
+            this.btnShowPostDetails.Size = new System.Drawing.Size(39, 40);
+            this.btnShowPostDetails.TabIndex = 7;
+            this.btnShowPostDetails.UseVisualStyleBackColor = false;
+            // 
+            // lblPostedTime
+            // 
+            this.lblPostedTime.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostedTime.ForeColor = System.Drawing.Color.Blue;
+            this.lblPostedTime.Location = new System.Drawing.Point(4, 86);
+            this.lblPostedTime.Name = "lblPostedTime";
+            this.lblPostedTime.Size = new System.Drawing.Size(139, 18);
+            this.lblPostedTime.TabIndex = 6;
+            this.lblPostedTime.Text = "9.00 am-10.00 am";
+            // 
+            // lblDate
+            // 
+            this.lblDate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblDate.ForeColor = System.Drawing.Color.Blue;
+            this.lblDate.Location = new System.Drawing.Point(534, 9);
+            this.lblDate.Name = "lblDate";
+            this.lblDate.Size = new System.Drawing.Size(83, 28);
+            this.lblDate.TabIndex = 2;
+            this.lblDate.Text = "11-2-2024";
+            // 
+            // lblPostTitle
+            // 
+            this.lblPostTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostTitle.Location = new System.Drawing.Point(3, 9);
+            this.lblPostTitle.Name = "lblPostTitle";
+            this.lblPostTitle.Size = new System.Drawing.Size(183, 28);
+            this.lblPostTitle.TabIndex = 1;
+            this.lblPostTitle.Text = "Post Title";
+            // 
+            // lblPostDetail
+            // 
+            this.lblPostDetail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostDetail.Location = new System.Drawing.Point(3, 37);
+            this.lblPostDetail.Name = "lblPostDetail";
+            this.lblPostDetail.Size = new System.Drawing.Size(625, 49);
+            this.lblPostDetail.TabIndex = 0;
+            this.lblPostDetail.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
+    "cididunt ut labore et dolore magna aliqua. Erat pellentesque adipiscing commodo " +
+    "elit at imperdiet dui accumsan sit.";
+            // 
             // pnlEventBudget
             // 
             this.pnlEventBudget.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(241)))), ((int)(((byte)(244)))), ((int)(((byte)(247)))));
+            this.pnlEventBudget.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlEventBudget.Controls.Add(this.checkBoxPostToFacebook);
             this.pnlEventBudget.Controls.Add(this.checkBoxPostToInstagram);
             this.pnlEventBudget.Controls.Add(this.checkBoxPostToTwitter);
@@ -92,6 +208,65 @@
             this.pnlEventBudget.Name = "pnlEventBudget";
             this.pnlEventBudget.Size = new System.Drawing.Size(360, 650);
             this.pnlEventBudget.TabIndex = 12;
+            // 
+            // checkBoxPostToFacebook
+            // 
+            this.checkBoxPostToFacebook.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.checkBoxPostToFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxPostToFacebook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPostToFacebook.Location = new System.Drawing.Point(230, 531);
+            this.checkBoxPostToFacebook.Name = "checkBoxPostToFacebook";
+            this.checkBoxPostToFacebook.Size = new System.Drawing.Size(115, 38);
+            this.checkBoxPostToFacebook.TabIndex = 41;
+            this.checkBoxPostToFacebook.Text = "Facebook";
+            this.checkBoxPostToFacebook.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPostToInstagram
+            // 
+            this.checkBoxPostToInstagram.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.checkBoxPostToInstagram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxPostToInstagram.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPostToInstagram.Location = new System.Drawing.Point(40, 533);
+            this.checkBoxPostToInstagram.Name = "checkBoxPostToInstagram";
+            this.checkBoxPostToInstagram.Size = new System.Drawing.Size(141, 38);
+            this.checkBoxPostToInstagram.TabIndex = 40;
+            this.checkBoxPostToInstagram.Text = "Instagram";
+            this.checkBoxPostToInstagram.UseVisualStyleBackColor = true;
+            // 
+            // checkBoxPostToTwitter
+            // 
+            this.checkBoxPostToTwitter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.checkBoxPostToTwitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxPostToTwitter.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPostToTwitter.Location = new System.Drawing.Point(230, 487);
+            this.checkBoxPostToTwitter.Name = "checkBoxPostToTwitter";
+            this.checkBoxPostToTwitter.Size = new System.Drawing.Size(90, 38);
+            this.checkBoxPostToTwitter.TabIndex = 39;
+            this.checkBoxPostToTwitter.Text = "Twitter";
+            this.checkBoxPostToTwitter.UseVisualStyleBackColor = true;
+            // 
+            // lblPostTo
+            // 
+            this.lblPostTo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPostTo.ForeColor = System.Drawing.Color.Navy;
+            this.lblPostTo.Location = new System.Drawing.Point(36, 447);
+            this.lblPostTo.Name = "lblPostTo";
+            this.lblPostTo.Size = new System.Drawing.Size(79, 25);
+            this.lblPostTo.TabIndex = 38;
+            this.lblPostTo.Text = "POST TO";
+            this.lblPostTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // checkBoxPostToAll
+            // 
+            this.checkBoxPostToAll.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
+            this.checkBoxPostToAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.checkBoxPostToAll.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.checkBoxPostToAll.Location = new System.Drawing.Point(40, 487);
+            this.checkBoxPostToAll.Name = "checkBoxPostToAll";
+            this.checkBoxPostToAll.Size = new System.Drawing.Size(172, 38);
+            this.checkBoxPostToAll.TabIndex = 37;
+            this.checkBoxPostToAll.Text = "All Social Media";
+            this.checkBoxPostToAll.UseVisualStyleBackColor = true;
             // 
             // lblPostBody
             // 
@@ -121,7 +296,6 @@
             // txtEventBudgetDetails
             // 
             this.txtEventBudgetDetails.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.txtEventBudgetDetails.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtEventBudgetDetails.Depth = 0;
             this.txtEventBudgetDetails.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtEventBudgetDetails.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
@@ -245,184 +419,13 @@
             // lblHome
             // 
             this.lblHome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.ForeColor = System.Drawing.Color.Black;
             this.lblHome.Location = new System.Drawing.Point(470, 12);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(140, 34);
             this.lblHome.TabIndex = 2;
             this.lblHome.Text = "Home";
             this.lblHome.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // checkBoxPostToFacebook
-            // 
-            this.checkBoxPostToFacebook.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.checkBoxPostToFacebook.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxPostToFacebook.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPostToFacebook.Location = new System.Drawing.Point(230, 531);
-            this.checkBoxPostToFacebook.Name = "checkBoxPostToFacebook";
-            this.checkBoxPostToFacebook.Size = new System.Drawing.Size(115, 38);
-            this.checkBoxPostToFacebook.TabIndex = 41;
-            this.checkBoxPostToFacebook.Text = "Facebook";
-            this.checkBoxPostToFacebook.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPostToInstagram
-            // 
-            this.checkBoxPostToInstagram.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.checkBoxPostToInstagram.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxPostToInstagram.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPostToInstagram.Location = new System.Drawing.Point(40, 533);
-            this.checkBoxPostToInstagram.Name = "checkBoxPostToInstagram";
-            this.checkBoxPostToInstagram.Size = new System.Drawing.Size(141, 38);
-            this.checkBoxPostToInstagram.TabIndex = 40;
-            this.checkBoxPostToInstagram.Text = "Instagram";
-            this.checkBoxPostToInstagram.UseVisualStyleBackColor = true;
-            // 
-            // checkBoxPostToTwitter
-            // 
-            this.checkBoxPostToTwitter.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.checkBoxPostToTwitter.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxPostToTwitter.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPostToTwitter.Location = new System.Drawing.Point(230, 487);
-            this.checkBoxPostToTwitter.Name = "checkBoxPostToTwitter";
-            this.checkBoxPostToTwitter.Size = new System.Drawing.Size(90, 38);
-            this.checkBoxPostToTwitter.TabIndex = 39;
-            this.checkBoxPostToTwitter.Text = "Twitter";
-            this.checkBoxPostToTwitter.UseVisualStyleBackColor = true;
-            // 
-            // lblPostTo
-            // 
-            this.lblPostTo.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPostTo.ForeColor = System.Drawing.Color.Navy;
-            this.lblPostTo.Location = new System.Drawing.Point(36, 447);
-            this.lblPostTo.Name = "lblPostTo";
-            this.lblPostTo.Size = new System.Drawing.Size(79, 25);
-            this.lblPostTo.TabIndex = 38;
-            this.lblPostTo.Text = "POST TO";
-            this.lblPostTo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // checkBoxPostToAll
-            // 
-            this.checkBoxPostToAll.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
-            this.checkBoxPostToAll.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.checkBoxPostToAll.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.checkBoxPostToAll.Location = new System.Drawing.Point(40, 487);
-            this.checkBoxPostToAll.Name = "checkBoxPostToAll";
-            this.checkBoxPostToAll.Size = new System.Drawing.Size(172, 38);
-            this.checkBoxPostToAll.TabIndex = 37;
-            this.checkBoxPostToAll.Text = "All Social Media";
-            this.checkBoxPostToAll.UseVisualStyleBackColor = true;
-            // 
-            // lblRecentPost
-            // 
-            this.lblRecentPost.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRecentPost.ForeColor = System.Drawing.Color.Navy;
-            this.lblRecentPost.Location = new System.Drawing.Point(395, 59);
-            this.lblRecentPost.Name = "lblRecentPost";
-            this.lblRecentPost.Size = new System.Drawing.Size(185, 25);
-            this.lblRecentPost.TabIndex = 13;
-            this.lblRecentPost.Text = "RECENT POST";
-            // 
-            // pnlRecentPost
-            // 
-            this.pnlRecentPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlRecentPost.Controls.Add(this.pnlShowEvents);
-            this.pnlRecentPost.Controls.Add(this.pnlEventNews);
-            this.pnlRecentPost.Location = new System.Drawing.Point(399, 87);
-            this.pnlRecentPost.Name = "pnlRecentPost";
-            this.pnlRecentPost.Size = new System.Drawing.Size(669, 623);
-            this.pnlRecentPost.TabIndex = 14;
-            // 
-            // pnlShowEvents
-            // 
-            this.pnlShowEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.pnlShowEvents.Controls.Add(this.btnShowAllPost);
-            this.pnlShowEvents.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlShowEvents.Location = new System.Drawing.Point(0, 588);
-            this.pnlShowEvents.Name = "pnlShowEvents";
-            this.pnlShowEvents.Size = new System.Drawing.Size(669, 35);
-            this.pnlShowEvents.TabIndex = 2;
-            // 
-            // btnShowAllPost
-            // 
-            this.btnShowAllPost.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
-            this.btnShowAllPost.FlatAppearance.BorderSize = 0;
-            this.btnShowAllPost.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowAllPost.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnShowAllPost.ForeColor = System.Drawing.Color.White;
-            this.btnShowAllPost.Location = new System.Drawing.Point(291, 3);
-            this.btnShowAllPost.Name = "btnShowAllPost";
-            this.btnShowAllPost.Size = new System.Drawing.Size(105, 29);
-            this.btnShowAllPost.TabIndex = 1;
-            this.btnShowAllPost.Text = "SHOW ALL";
-            this.btnShowAllPost.UseVisualStyleBackColor = false;
-            // 
-            // pnlEventNews
-            // 
-            this.pnlEventNews.BackColor = System.Drawing.Color.White;
-            this.pnlEventNews.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.pnlEventNews.Controls.Add(this.btnShowPostDetails);
-            this.pnlEventNews.Controls.Add(this.lblPostedTime);
-            this.pnlEventNews.Controls.Add(this.lblDate);
-            this.pnlEventNews.Controls.Add(this.lblPostTitle);
-            this.pnlEventNews.Controls.Add(this.lblPostDetail);
-            this.pnlEventNews.Location = new System.Drawing.Point(9, 16);
-            this.pnlEventNews.Name = "pnlEventNews";
-            this.pnlEventNews.Size = new System.Drawing.Size(646, 123);
-            this.pnlEventNews.TabIndex = 0;
-            // 
-            // btnShowPostDetails
-            // 
-            this.btnShowPostDetails.BackColor = System.Drawing.Color.White;
-            this.btnShowPostDetails.FlatAppearance.BorderSize = 0;
-            this.btnShowPostDetails.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnShowPostDetails.IconChar = FontAwesome.Sharp.IconChar.ArrowRight;
-            this.btnShowPostDetails.IconColor = System.Drawing.Color.Navy;
-            this.btnShowPostDetails.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnShowPostDetails.IconSize = 32;
-            this.btnShowPostDetails.Location = new System.Drawing.Point(578, 78);
-            this.btnShowPostDetails.Name = "btnShowPostDetails";
-            this.btnShowPostDetails.Size = new System.Drawing.Size(39, 40);
-            this.btnShowPostDetails.TabIndex = 7;
-            this.btnShowPostDetails.UseVisualStyleBackColor = false;
-            // 
-            // lblPostedTime
-            // 
-            this.lblPostedTime.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPostedTime.ForeColor = System.Drawing.Color.Blue;
-            this.lblPostedTime.Location = new System.Drawing.Point(4, 86);
-            this.lblPostedTime.Name = "lblPostedTime";
-            this.lblPostedTime.Size = new System.Drawing.Size(139, 18);
-            this.lblPostedTime.TabIndex = 6;
-            this.lblPostedTime.Text = "9.00 am-10.00 am";
-            // 
-            // lblDate
-            // 
-            this.lblDate.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDate.ForeColor = System.Drawing.Color.Blue;
-            this.lblDate.Location = new System.Drawing.Point(534, 9);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(83, 28);
-            this.lblDate.TabIndex = 2;
-            this.lblDate.Text = "11-2-2024";
-            // 
-            // lblPostTitle
-            // 
-            this.lblPostTitle.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPostTitle.Location = new System.Drawing.Point(3, 9);
-            this.lblPostTitle.Name = "lblPostTitle";
-            this.lblPostTitle.Size = new System.Drawing.Size(183, 28);
-            this.lblPostTitle.TabIndex = 1;
-            this.lblPostTitle.Text = "Post Title";
-            // 
-            // lblPostDetail
-            // 
-            this.lblPostDetail.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPostDetail.Location = new System.Drawing.Point(3, 37);
-            this.lblPostDetail.Name = "lblPostDetail";
-            this.lblPostDetail.Size = new System.Drawing.Size(625, 49);
-            this.lblPostDetail.TabIndex = 0;
-            this.lblPostDetail.Text = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor in" +
-    "cididunt ut labore et dolore magna aliqua. Erat pellentesque adipiscing commodo " +
-    "elit at imperdiet dui accumsan sit.";
             // 
             // MarketingHome
             // 
@@ -433,10 +436,10 @@
             this.Name = "MarketingHome";
             this.Size = new System.Drawing.Size(1080, 729);
             this.pnlAdvisorHome.ResumeLayout(false);
-            this.pnlEventBudget.ResumeLayout(false);
             this.pnlRecentPost.ResumeLayout(false);
             this.pnlShowEvents.ResumeLayout(false);
             this.pnlEventNews.ResumeLayout(false);
+            this.pnlEventBudget.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

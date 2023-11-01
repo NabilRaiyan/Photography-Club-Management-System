@@ -16,5 +16,10 @@ namespace Photography_club_Management
         {
             InitializeComponent();
         }
+
+        private void txtSearchCustomer_Click(object sender, EventArgs e)
+        {
+            ForeColor = Color.White;
+        }
     }
 }

@@ -64,6 +64,7 @@
             // 
             // pnlCustomers
             // 
+            this.pnlCustomers.BackColor = System.Drawing.Color.White;
             this.pnlCustomers.Controls.Add(this.pnlSearchClient);
             this.pnlCustomers.Controls.Add(this.pnlAllCustomers);
             this.pnlCustomers.Controls.Add(this.lblCustomer);
@@ -108,6 +109,7 @@
             this.txtSearchCustomer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.txtSearchCustomer.TrailingIcon = null;
             this.txtSearchCustomer.UseSystemPasswordChar = false;
+            this.txtSearchCustomer.Click += new System.EventHandler(this.txtSearchCustomer_Click);
             // 
             // pnlAllCustomers
             // 

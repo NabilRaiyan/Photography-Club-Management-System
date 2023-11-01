@@ -113,7 +113,7 @@
             this.txtSearchMembers.Hint = "SEARCH MEMBERS BY NAME";
             this.txtSearchMembers.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtSearchMembers.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearchMembers.LeadingIcon")));
-            this.txtSearchMembers.Location = new System.Drawing.Point(790, 50);
+            this.txtSearchMembers.Location = new System.Drawing.Point(787, 50);
             this.txtSearchMembers.Mask = "";
             this.txtSearchMembers.MaxLength = 32767;
             this.txtSearchMembers.MouseState = MaterialSkin.MouseState.OUT;

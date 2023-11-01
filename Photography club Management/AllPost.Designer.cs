@@ -62,6 +62,7 @@
             // 
             // pnlAllPost
             // 
+            this.pnlAllPost.BackColor = System.Drawing.Color.White;
             this.pnlAllPost.Controls.Add(this.txtSearchPosts);
             this.pnlAllPost.Controls.Add(this.pnlAllEvents);
             this.pnlAllPost.Controls.Add(this.lblPosts);
@@ -70,6 +71,7 @@
             this.pnlAllPost.Name = "pnlAllPost";
             this.pnlAllPost.Size = new System.Drawing.Size(1080, 729);
             this.pnlAllPost.TabIndex = 0;
+            this.pnlAllPost.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlAllPost_Paint);
             // 
             // txtSearchPosts
             // 
@@ -115,7 +117,7 @@
             // 
             // pnlAllEvents
             // 
-            this.pnlAllEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlAllEvents.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
             this.pnlAllEvents.Controls.Add(this.panel1);
             this.pnlAllEvents.Controls.Add(this.pnlEventsHeading);
             this.pnlAllEvents.Controls.Add(this.pnlEventNews);

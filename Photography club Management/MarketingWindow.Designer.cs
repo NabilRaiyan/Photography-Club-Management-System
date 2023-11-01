@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarketingWindow));
-            this.pnlAdvisorWindow = new System.Windows.Forms.Panel();
+            this.pnlMarketingWindow = new System.Windows.Forms.Panel();
+            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
+            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
+            this.marketingHome = new Photography_club_Management.MarketingHome();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnNotifications = new FontAwesome.Sharp.IconButton();
             this.btnPaySlip = new FontAwesome.Sharp.IconButton();
@@ -38,42 +41,64 @@
             this.pnlWindowControl = new System.Windows.Forms.Panel();
             this.pnlNavMenu = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
+            this.btnAllPosts = new FontAwesome.Sharp.IconButton();
             this.pnlActiveMenu = new System.Windows.Forms.Panel();
             this.btnEvents = new FontAwesome.Sharp.IconButton();
             this.btnHome = new FontAwesome.Sharp.IconButton();
             this.pnlProfile = new System.Windows.Forms.Panel();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
-            this.btnAllPosts = new FontAwesome.Sharp.IconButton();
             this.allPost = new Photography_club_Management.AllPost();
-            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
-            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
-            this.marketingHome = new Photography_club_Management.MarketingHome();
-            this.pnlAdvisorWindow.SuspendLayout();
+            this.pnlMarketingWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             this.pnlProfile.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picBoxUser)).BeginInit();
             this.SuspendLayout();
             // 
-            // pnlAdvisorWindow
+            // pnlMarketingWindow
             // 
-            this.pnlAdvisorWindow.Controls.Add(this.allPost);
-            this.pnlAdvisorWindow.Controls.Add(this.notificationsWindow);
-            this.pnlAdvisorWindow.Controls.Add(this.photographerEventsShow);
-            this.pnlAdvisorWindow.Controls.Add(this.marketingHome);
-            this.pnlAdvisorWindow.Controls.Add(this.btnLogout);
-            this.pnlAdvisorWindow.Controls.Add(this.btnNotifications);
-            this.pnlAdvisorWindow.Controls.Add(this.btnPaySlip);
-            this.pnlAdvisorWindow.Controls.Add(this.lblDashboard);
-            this.pnlAdvisorWindow.Controls.Add(this.pnlBottomBorder);
-            this.pnlAdvisorWindow.Controls.Add(this.pnlWindowControl);
-            this.pnlAdvisorWindow.Controls.Add(this.pnlNavMenu);
-            this.pnlAdvisorWindow.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAdvisorWindow.Location = new System.Drawing.Point(0, 0);
-            this.pnlAdvisorWindow.Name = "pnlAdvisorWindow";
-            this.pnlAdvisorWindow.Size = new System.Drawing.Size(1300, 821);
-            this.pnlAdvisorWindow.TabIndex = 0;
+            this.pnlMarketingWindow.Controls.Add(this.allPost);
+            this.pnlMarketingWindow.Controls.Add(this.notificationsWindow);
+            this.pnlMarketingWindow.Controls.Add(this.photographerEventsShow);
+            this.pnlMarketingWindow.Controls.Add(this.marketingHome);
+            this.pnlMarketingWindow.Controls.Add(this.btnLogout);
+            this.pnlMarketingWindow.Controls.Add(this.btnNotifications);
+            this.pnlMarketingWindow.Controls.Add(this.btnPaySlip);
+            this.pnlMarketingWindow.Controls.Add(this.lblDashboard);
+            this.pnlMarketingWindow.Controls.Add(this.pnlBottomBorder);
+            this.pnlMarketingWindow.Controls.Add(this.pnlWindowControl);
+            this.pnlMarketingWindow.Controls.Add(this.pnlNavMenu);
+            this.pnlMarketingWindow.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlMarketingWindow.Location = new System.Drawing.Point(0, 0);
+            this.pnlMarketingWindow.Name = "pnlMarketingWindow";
+            this.pnlMarketingWindow.Size = new System.Drawing.Size(1300, 821);
+            this.pnlMarketingWindow.TabIndex = 0;
+            // 
+            // notificationsWindow
+            // 
+            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
+            this.notificationsWindow.Location = new System.Drawing.Point(667, 89);
+            this.notificationsWindow.Name = "notificationsWindow";
+            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
+            this.notificationsWindow.TabIndex = 20;
+            // 
+            // photographerEventsShow
+            // 
+            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
+            this.photographerEventsShow.Location = new System.Drawing.Point(225, 76);
+            this.photographerEventsShow.Name = "photographerEventsShow";
+            this.photographerEventsShow.Size = new System.Drawing.Size(1075, 729);
+            this.photographerEventsShow.TabIndex = 19;
+            // 
+            // marketingHome
+            // 
+            this.marketingHome.BackColor = System.Drawing.Color.White;
+            this.marketingHome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.marketingHome.Location = new System.Drawing.Point(220, 76);
+            this.marketingHome.Name = "marketingHome";
+            this.marketingHome.Size = new System.Drawing.Size(1080, 729);
+            this.marketingHome.TabIndex = 18;
             // 
             // btnLogout
             // 
@@ -195,6 +220,28 @@
             this.pnlMenu.Size = new System.Drawing.Size(220, 650);
             this.pnlMenu.TabIndex = 3;
             // 
+            // btnAllPosts
+            // 
+            this.btnAllPosts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.btnAllPosts.FlatAppearance.BorderSize = 0;
+            this.btnAllPosts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnAllPosts.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAllPosts.ForeColor = System.Drawing.Color.White;
+            this.btnAllPosts.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
+            this.btnAllPosts.IconColor = System.Drawing.Color.White;
+            this.btnAllPosts.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            this.btnAllPosts.IconSize = 32;
+            this.btnAllPosts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllPosts.Location = new System.Drawing.Point(18, 310);
+            this.btnAllPosts.Name = "btnAllPosts";
+            this.btnAllPosts.Size = new System.Drawing.Size(178, 36);
+            this.btnAllPosts.TabIndex = 8;
+            this.btnAllPosts.Text = "Posts";
+            this.btnAllPosts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnAllPosts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnAllPosts.UseVisualStyleBackColor = true;
+            this.btnAllPosts.Click += new System.EventHandler(this.btnAllPosts_Click);
+            // 
             // pnlActiveMenu
             // 
             this.pnlActiveMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(52)))), ((int)(((byte)(128)))), ((int)(((byte)(255)))));
@@ -278,59 +325,13 @@
             this.picBoxUser.TabIndex = 0;
             this.picBoxUser.TabStop = false;
             // 
-            // btnAllPosts
-            // 
-            this.btnAllPosts.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.btnAllPosts.FlatAppearance.BorderSize = 0;
-            this.btnAllPosts.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnAllPosts.Font = new System.Drawing.Font("Century Gothic", 13.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAllPosts.ForeColor = System.Drawing.Color.White;
-            this.btnAllPosts.IconChar = FontAwesome.Sharp.IconChar.CalendarDay;
-            this.btnAllPosts.IconColor = System.Drawing.Color.White;
-            this.btnAllPosts.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            this.btnAllPosts.IconSize = 32;
-            this.btnAllPosts.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAllPosts.Location = new System.Drawing.Point(18, 310);
-            this.btnAllPosts.Name = "btnAllPosts";
-            this.btnAllPosts.Size = new System.Drawing.Size(178, 36);
-            this.btnAllPosts.TabIndex = 8;
-            this.btnAllPosts.Text = "Posts";
-            this.btnAllPosts.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnAllPosts.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnAllPosts.UseVisualStyleBackColor = true;
-            this.btnAllPosts.Click += new System.EventHandler(this.btnAllPosts_Click);
-            // 
             // allPost
             // 
             this.allPost.BackColor = System.Drawing.Color.White;
-            this.allPost.Location = new System.Drawing.Point(226, 70);
+            this.allPost.Location = new System.Drawing.Point(226, 74);
             this.allPost.Name = "allPost";
-            this.allPost.Size = new System.Drawing.Size(1070, 729);
+            this.allPost.Size = new System.Drawing.Size(1071, 729);
             this.allPost.TabIndex = 21;
-            // 
-            // notificationsWindow
-            // 
-            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
-            this.notificationsWindow.Location = new System.Drawing.Point(678, 86);
-            this.notificationsWindow.Name = "notificationsWindow";
-            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
-            this.notificationsWindow.TabIndex = 20;
-            // 
-            // photographerEventsShow
-            // 
-            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
-            this.photographerEventsShow.Location = new System.Drawing.Point(225, 70);
-            this.photographerEventsShow.Name = "photographerEventsShow";
-            this.photographerEventsShow.Size = new System.Drawing.Size(1071, 729);
-            this.photographerEventsShow.TabIndex = 19;
-            // 
-            // marketingHome
-            // 
-            this.marketingHome.BackColor = System.Drawing.Color.White;
-            this.marketingHome.Location = new System.Drawing.Point(220, 74);
-            this.marketingHome.Name = "marketingHome";
-            this.marketingHome.Size = new System.Drawing.Size(1080, 729);
-            this.marketingHome.TabIndex = 18;
             // 
             // MarketingWindow
             // 
@@ -338,11 +339,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1300, 821);
-            this.Controls.Add(this.pnlAdvisorWindow);
+            this.Controls.Add(this.pnlMarketingWindow);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Name = "MarketingWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.pnlAdvisorWindow.ResumeLayout(false);
+            this.Load += new System.EventHandler(this.MarketingWindow_Load);
+            this.pnlMarketingWindow.ResumeLayout(false);
             this.pnlNavMenu.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
             this.pnlProfile.ResumeLayout(false);
@@ -353,7 +355,7 @@
 
         #endregion
 
-        private System.Windows.Forms.Panel pnlAdvisorWindow;
+        private System.Windows.Forms.Panel pnlMarketingWindow;
         private System.Windows.Forms.Panel pnlNavMenu;
         private System.Windows.Forms.Panel pnlMenu;
         private System.Windows.Forms.Panel pnlActiveMenu;

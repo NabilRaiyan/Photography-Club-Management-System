@@ -15,6 +15,7 @@ namespace Photography_club_Management
         public MarketingWindow()
         {
             InitializeComponent();
+            
             pnlActiveMenu.Height = btnHome.Height;
             pnlActiveMenu.Top = btnHome.Top;
             marketingHome.BringToFront();
@@ -45,6 +46,11 @@ namespace Photography_club_Management
             pnlActiveMenu.Height = btnAllPosts.Height;
             pnlActiveMenu.Top = btnAllPosts.Top;
             allPost.BringToFront();
+        }
+
+        private void MarketingWindow_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
