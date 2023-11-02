@@ -303,9 +303,9 @@
             // allPost
             // 
             this.allPost.BackColor = System.Drawing.Color.White;
-            this.allPost.Location = new System.Drawing.Point(226, 74);
+            this.allPost.Location = new System.Drawing.Point(223, 76);
             this.allPost.Name = "allPost";
-            this.allPost.Size = new System.Drawing.Size(1071, 729);
+            this.allPost.Size = new System.Drawing.Size(1072, 729);
             this.allPost.TabIndex = 21;
             // 
             // notificationsWindow
@@ -319,7 +319,7 @@
             // photographerEventsShow
             // 
             this.photographerEventsShow.BackColor = System.Drawing.Color.White;
-            this.photographerEventsShow.Location = new System.Drawing.Point(225, 76);
+            this.photographerEventsShow.Location = new System.Drawing.Point(220, 76);
             this.photographerEventsShow.Name = "photographerEventsShow";
             this.photographerEventsShow.Size = new System.Drawing.Size(1075, 729);
             this.photographerEventsShow.TabIndex = 19;

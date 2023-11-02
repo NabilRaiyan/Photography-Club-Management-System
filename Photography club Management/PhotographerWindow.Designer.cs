@@ -30,11 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PhotographerWindow));
             this.pnlPhotographerWindow = new System.Windows.Forms.Panel();
-            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
-            this.photographerGallery = new Photography_club_Management.PhotographerGallery();
-            this.photographerHome = new Photography_club_Management.PhotographerHome();
             this.pnlBottomBorder = new System.Windows.Forms.Panel();
-            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.btnPaySlip = new FontAwesome.Sharp.IconButton();
             this.btnNotifications = new FontAwesome.Sharp.IconButton();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
@@ -49,6 +45,10 @@
             this.pnlProfile = new System.Windows.Forms.Panel();
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
+            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
+            this.photographerGallery = new Photography_club_Management.PhotographerGallery();
+            this.photographerHome = new Photography_club_Management.PhotographerHome();
+            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
             this.pnlPhotographerWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -75,30 +75,6 @@
             this.pnlPhotographerWindow.Size = new System.Drawing.Size(1300, 821);
             this.pnlPhotographerWindow.TabIndex = 0;
             // 
-            // photographerEventsShow
-            // 
-            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
-            this.photographerEventsShow.Location = new System.Drawing.Point(226, 74);
-            this.photographerEventsShow.Name = "photographerEventsShow";
-            this.photographerEventsShow.Size = new System.Drawing.Size(1071, 725);
-            this.photographerEventsShow.TabIndex = 16;
-            // 
-            // photographerGallery
-            // 
-            this.photographerGallery.BackColor = System.Drawing.Color.White;
-            this.photographerGallery.Location = new System.Drawing.Point(226, 74);
-            this.photographerGallery.Name = "photographerGallery";
-            this.photographerGallery.Size = new System.Drawing.Size(1071, 725);
-            this.photographerGallery.TabIndex = 15;
-            // 
-            // photographerHome
-            // 
-            this.photographerHome.BackColor = System.Drawing.Color.White;
-            this.photographerHome.Location = new System.Drawing.Point(226, 74);
-            this.photographerHome.Name = "photographerHome";
-            this.photographerHome.Size = new System.Drawing.Size(1071, 725);
-            this.photographerHome.TabIndex = 14;
-            // 
             // pnlBottomBorder
             // 
             this.pnlBottomBorder.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
@@ -107,14 +83,6 @@
             this.pnlBottomBorder.Name = "pnlBottomBorder";
             this.pnlBottomBorder.Size = new System.Drawing.Size(1080, 16);
             this.pnlBottomBorder.TabIndex = 13;
-            // 
-            // notificationsWindow
-            // 
-            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(106)))), ((int)(((byte)(251)))));
-            this.notificationsWindow.Location = new System.Drawing.Point(670, 91);
-            this.notificationsWindow.Name = "notificationsWindow";
-            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
-            this.notificationsWindow.TabIndex = 12;
             // 
             // btnPaySlip
             // 
@@ -333,6 +301,38 @@
             this.picBoxUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.picBoxUser.TabIndex = 0;
             this.picBoxUser.TabStop = false;
+            // 
+            // photographerEventsShow
+            // 
+            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
+            this.photographerEventsShow.Location = new System.Drawing.Point(226, 74);
+            this.photographerEventsShow.Name = "photographerEventsShow";
+            this.photographerEventsShow.Size = new System.Drawing.Size(1071, 725);
+            this.photographerEventsShow.TabIndex = 16;
+            // 
+            // photographerGallery
+            // 
+            this.photographerGallery.BackColor = System.Drawing.Color.White;
+            this.photographerGallery.Location = new System.Drawing.Point(226, 74);
+            this.photographerGallery.Name = "photographerGallery";
+            this.photographerGallery.Size = new System.Drawing.Size(1071, 725);
+            this.photographerGallery.TabIndex = 15;
+            // 
+            // photographerHome
+            // 
+            this.photographerHome.BackColor = System.Drawing.Color.White;
+            this.photographerHome.Location = new System.Drawing.Point(226, 74);
+            this.photographerHome.Name = "photographerHome";
+            this.photographerHome.Size = new System.Drawing.Size(1071, 725);
+            this.photographerHome.TabIndex = 14;
+            // 
+            // notificationsWindow
+            // 
+            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(106)))), ((int)(((byte)(251)))));
+            this.notificationsWindow.Location = new System.Drawing.Point(670, 91);
+            this.notificationsWindow.Name = "notificationsWindow";
+            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
+            this.notificationsWindow.TabIndex = 12;
             // 
             // PhotographerWindow
             // 
