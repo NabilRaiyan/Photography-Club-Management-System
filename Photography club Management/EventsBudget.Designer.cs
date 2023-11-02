@@ -77,10 +77,9 @@
             this.pnlAllEvents.Controls.Add(this.panel1);
             this.pnlAllEvents.Controls.Add(this.pnlEventsBudgetHeading);
             this.pnlAllEvents.Controls.Add(this.pnlEventNews);
-            this.pnlAllEvents.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.pnlAllEvents.Location = new System.Drawing.Point(0, 126);
+            this.pnlAllEvents.Location = new System.Drawing.Point(3, 129);
             this.pnlAllEvents.Name = "pnlAllEvents";
-            this.pnlAllEvents.Size = new System.Drawing.Size(1080, 603);
+            this.pnlAllEvents.Size = new System.Drawing.Size(1077, 600);
             this.pnlAllEvents.TabIndex = 25;
             // 
             // panel1
@@ -179,7 +178,7 @@
             this.pnlEventsBudgetHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlEventsBudgetHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlEventsBudgetHeading.Name = "pnlEventsBudgetHeading";
-            this.pnlEventsBudgetHeading.Size = new System.Drawing.Size(1080, 37);
+            this.pnlEventsBudgetHeading.Size = new System.Drawing.Size(1077, 37);
             this.pnlEventsBudgetHeading.TabIndex = 3;
             // 
             // lblEventOrganizerId

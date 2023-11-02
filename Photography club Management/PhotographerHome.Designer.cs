@@ -60,7 +60,7 @@
             // 
             // pnlPhotographerHome
             // 
-            this.pnlPhotographerHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
+            this.pnlPhotographerHome.BackColor = System.Drawing.Color.White;
             this.pnlPhotographerHome.Controls.Add(this.pnlUploadResources);
             this.pnlPhotographerHome.Controls.Add(this.lblUpcommingEvents);
             this.pnlPhotographerHome.Controls.Add(this.pnlUpcommingEvents);
@@ -74,7 +74,7 @@
             // 
             // pnlUploadResources
             // 
-            this.pnlUploadResources.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.pnlUploadResources.BackColor = System.Drawing.Color.Gainsboro;
             this.pnlUploadResources.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.pnlUploadResources.Controls.Add(this.btnClearFileField);
             this.pnlUploadResources.Controls.Add(this.btnClearPhotoField);
@@ -120,7 +120,8 @@
             // lblUploadedFileLink
             // 
             this.lblUploadedFileLink.Font = new System.Drawing.Font("Century Gothic", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUploadedFileLink.LinkColor = System.Drawing.Color.White;
+            this.lblUploadedFileLink.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
+            this.lblUploadedFileLink.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.lblUploadedFileLink.Location = new System.Drawing.Point(31, 126);
             this.lblUploadedFileLink.Name = "lblUploadedFileLink";
             this.lblUploadedFileLink.Size = new System.Drawing.Size(265, 27);
@@ -139,6 +140,7 @@
             // 
             // picBoxUploadPhoto
             // 
+            this.picBoxUploadPhoto.BackColor = System.Drawing.Color.WhiteSmoke;
             this.picBoxUploadPhoto.Dock = System.Windows.Forms.DockStyle.Fill;
             this.picBoxUploadPhoto.Location = new System.Drawing.Point(0, 0);
             this.picBoxUploadPhoto.Name = "picBoxUploadPhoto";
@@ -153,9 +155,9 @@
             this.btnUploadPhoto.FlatAppearance.BorderSize = 0;
             this.btnUploadPhoto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUploadPhoto.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadPhoto.ForeColor = System.Drawing.Color.White;
+            this.btnUploadPhoto.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.btnUploadPhoto.IconChar = FontAwesome.Sharp.IconChar.File;
-            this.btnUploadPhoto.IconColor = System.Drawing.Color.White;
+            this.btnUploadPhoto.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.btnUploadPhoto.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUploadPhoto.IconSize = 32;
             this.btnUploadPhoto.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -175,9 +177,9 @@
             this.btnUploadPortfolio.FlatAppearance.BorderSize = 0;
             this.btnUploadPortfolio.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnUploadPortfolio.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUploadPortfolio.ForeColor = System.Drawing.Color.White;
+            this.btnUploadPortfolio.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.btnUploadPortfolio.IconChar = FontAwesome.Sharp.IconChar.File;
-            this.btnUploadPortfolio.IconColor = System.Drawing.Color.White;
+            this.btnUploadPortfolio.IconColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.btnUploadPortfolio.IconFont = FontAwesome.Sharp.IconFont.Auto;
             this.btnUploadPortfolio.IconSize = 32;
             this.btnUploadPortfolio.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -194,7 +196,7 @@
             // lblUploadResources
             // 
             this.lblUploadResources.Font = new System.Drawing.Font("Century Gothic", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUploadResources.ForeColor = System.Drawing.Color.White;
+            this.lblUploadResources.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.lblUploadResources.Location = new System.Drawing.Point(31, 17);
             this.lblUploadResources.Name = "lblUploadResources";
             this.lblUploadResources.Size = new System.Drawing.Size(289, 25);
@@ -323,6 +325,7 @@
             // lblHome
             // 
             this.lblHome.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblHome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.lblHome.Location = new System.Drawing.Point(470, 12);
             this.lblHome.Name = "lblHome";
             this.lblHome.Size = new System.Drawing.Size(140, 34);

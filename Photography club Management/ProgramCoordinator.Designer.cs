@@ -1,6 +1,6 @@
 ﻿namespace Photography_club_Management
 {
-    partial class Dashboard
+    partial class ProgramCoordinatorWindow
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Dashboard));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ProgramCoordinatorWindow));
             this.pnlNavMenu = new System.Windows.Forms.Panel();
             this.pnlMenu = new System.Windows.Forms.Panel();
             this.pnlActiveMenu = new System.Windows.Forms.Panel();
@@ -326,7 +326,7 @@
             // 
             // notificationsWindow
             // 
-            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
+            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(106)))), ((int)(((byte)(251)))));
             this.notificationsWindow.Location = new System.Drawing.Point(468, 3);
             this.notificationsWindow.Name = "notificationsWindow";
             this.notificationsWindow.Size = new System.Drawing.Size(600, 479);
@@ -397,7 +397,7 @@
             this.btnPaySlip.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnPaySlip.UseVisualStyleBackColor = false;
             // 
-            // Dashboard
+            // ProgramCoordinatorWindow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -411,7 +411,7 @@
             this.Controls.Add(this.lblDashboard);
             this.Controls.Add(this.pnlNavMenu);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
-            this.Name = "Dashboard";
+            this.Name = "ProgramCoordinatorWindow";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.pnlNavMenu.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);

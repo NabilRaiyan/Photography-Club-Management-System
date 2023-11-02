@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Photography_club_Management
 {
-    public partial class Dashboard : Form
+    public partial class ProgramCoordinatorWindow : Form
     {
-        public Dashboard()
+        public ProgramCoordinatorWindow()
         {
             InitializeComponent();
             pnlActiveMenu.Height = btnHome.Height;

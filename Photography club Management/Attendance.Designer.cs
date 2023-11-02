@@ -32,24 +32,24 @@
             this.lblAttendance = new System.Windows.Forms.Label();
             this.pnlAllMembers = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.pnlMembersHeading = new System.Windows.Forms.Panel();
+            this.lblMemberAttendHeading = new System.Windows.Forms.Label();
             this.lblMemberCurrentWorkingHeading = new System.Windows.Forms.Label();
             this.lblMemberRoleHeading = new System.Windows.Forms.Label();
             this.lblMemberNameHeading = new System.Windows.Forms.Label();
             this.lblMemberIdHeading = new System.Windows.Forms.Label();
             this.pnlEventNews = new System.Windows.Forms.Panel();
+            this.checkBoxAttend = new System.Windows.Forms.CheckBox();
             this.lblMemberCurrentWork = new System.Windows.Forms.Label();
             this.lblMemberId = new System.Windows.Forms.Label();
             this.lblMemberRole = new System.Windows.Forms.Label();
             this.lblMemberName = new System.Windows.Forms.Label();
-            this.lblMemberAttendHeading = new System.Windows.Forms.Label();
             this.txtSearchMembers = new MaterialSkin.Controls.MaterialMaskedTextBox();
-            this.checkBoxAttend = new System.Windows.Forms.CheckBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pnlAllMembers.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnlMembersHeading.SuspendLayout();
@@ -72,9 +72,9 @@
             this.pnlAllMembers.Controls.Add(this.panel1);
             this.pnlAllMembers.Controls.Add(this.pnlMembersHeading);
             this.pnlAllMembers.Controls.Add(this.pnlEventNews);
-            this.pnlAllMembers.Location = new System.Drawing.Point(3, 131);
+            this.pnlAllMembers.Location = new System.Drawing.Point(3, 129);
             this.pnlAllMembers.Name = "pnlAllMembers";
-            this.pnlAllMembers.Size = new System.Drawing.Size(1074, 603);
+            this.pnlAllMembers.Size = new System.Drawing.Size(1077, 600);
             this.pnlAllMembers.TabIndex = 11;
             // 
             // panel1
@@ -90,6 +90,17 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1068, 41);
             this.panel1.TabIndex = 10;
+            // 
+            // checkBox1
+            // 
+            this.checkBox1.AutoSize = true;
+            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.checkBox1.Location = new System.Drawing.Point(929, 10);
+            this.checkBox1.Name = "checkBox1";
+            this.checkBox1.Size = new System.Drawing.Size(18, 17);
+            this.checkBox1.TabIndex = 12;
+            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -145,8 +156,19 @@
             this.pnlMembersHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlMembersHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlMembersHeading.Name = "pnlMembersHeading";
-            this.pnlMembersHeading.Size = new System.Drawing.Size(1074, 37);
+            this.pnlMembersHeading.Size = new System.Drawing.Size(1077, 37);
             this.pnlMembersHeading.TabIndex = 3;
+            // 
+            // lblMemberAttendHeading
+            // 
+            this.lblMemberAttendHeading.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMemberAttendHeading.ForeColor = System.Drawing.Color.White;
+            this.lblMemberAttendHeading.Location = new System.Drawing.Point(872, 3);
+            this.lblMemberAttendHeading.Name = "lblMemberAttendHeading";
+            this.lblMemberAttendHeading.Size = new System.Drawing.Size(142, 31);
+            this.lblMemberAttendHeading.TabIndex = 6;
+            this.lblMemberAttendHeading.Text = "ATTEND";
+            this.lblMemberAttendHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // lblMemberCurrentWorkingHeading
             // 
@@ -206,6 +228,17 @@
             this.pnlEventNews.Size = new System.Drawing.Size(1068, 41);
             this.pnlEventNews.TabIndex = 0;
             // 
+            // checkBoxAttend
+            // 
+            this.checkBoxAttend.AutoSize = true;
+            this.checkBoxAttend.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
+            this.checkBoxAttend.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.checkBoxAttend.Location = new System.Drawing.Point(929, 10);
+            this.checkBoxAttend.Name = "checkBoxAttend";
+            this.checkBoxAttend.Size = new System.Drawing.Size(18, 17);
+            this.checkBoxAttend.TabIndex = 11;
+            this.checkBoxAttend.UseVisualStyleBackColor = true;
+            // 
             // lblMemberCurrentWork
             // 
             this.lblMemberCurrentWork.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -249,17 +282,6 @@
             this.lblMemberName.Text = "Raiyan Al Sultan";
             this.lblMemberName.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // lblMemberAttendHeading
-            // 
-            this.lblMemberAttendHeading.Font = new System.Drawing.Font("Century Gothic", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMemberAttendHeading.ForeColor = System.Drawing.Color.White;
-            this.lblMemberAttendHeading.Location = new System.Drawing.Point(872, 3);
-            this.lblMemberAttendHeading.Name = "lblMemberAttendHeading";
-            this.lblMemberAttendHeading.Size = new System.Drawing.Size(142, 31);
-            this.lblMemberAttendHeading.TabIndex = 6;
-            this.lblMemberAttendHeading.Text = "ATTEND";
-            this.lblMemberAttendHeading.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
             // txtSearchMembers
             // 
             this.txtSearchMembers.AllowPromptAsInput = true;
@@ -275,7 +297,7 @@
             this.txtSearchMembers.Hint = "SEARCH MEMBERS BY NAME";
             this.txtSearchMembers.InsertKeyMode = System.Windows.Forms.InsertKeyMode.Default;
             this.txtSearchMembers.LeadingIcon = ((System.Drawing.Image)(resources.GetObject("txtSearchMembers.LeadingIcon")));
-            this.txtSearchMembers.Location = new System.Drawing.Point(3, 77);
+            this.txtSearchMembers.Location = new System.Drawing.Point(3, 72);
             this.txtSearchMembers.Mask = "";
             this.txtSearchMembers.MaxLength = 32767;
             this.txtSearchMembers.MouseState = MaterialSkin.MouseState.OUT;
@@ -292,7 +314,7 @@
             this.txtSearchMembers.SelectionLength = 0;
             this.txtSearchMembers.SelectionStart = 0;
             this.txtSearchMembers.ShortcutsEnabled = true;
-            this.txtSearchMembers.Size = new System.Drawing.Size(287, 48);
+            this.txtSearchMembers.Size = new System.Drawing.Size(283, 48);
             this.txtSearchMembers.SkipLiterals = true;
             this.txtSearchMembers.TabIndex = 23;
             this.txtSearchMembers.TabStop = false;
@@ -301,28 +323,6 @@
             this.txtSearchMembers.TrailingIcon = null;
             this.txtSearchMembers.UseSystemPasswordChar = false;
             this.txtSearchMembers.ValidatingType = null;
-            // 
-            // checkBoxAttend
-            // 
-            this.checkBoxAttend.AutoSize = true;
-            this.checkBoxAttend.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.checkBoxAttend.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.checkBoxAttend.Location = new System.Drawing.Point(929, 10);
-            this.checkBoxAttend.Name = "checkBoxAttend";
-            this.checkBoxAttend.Size = new System.Drawing.Size(18, 17);
-            this.checkBoxAttend.TabIndex = 11;
-            this.checkBoxAttend.UseVisualStyleBackColor = true;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.AutoSize = true;
-            this.checkBox1.FlatAppearance.BorderColor = System.Drawing.Color.Navy;
-            this.checkBox1.FlatAppearance.CheckedBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.checkBox1.Location = new System.Drawing.Point(929, 10);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(18, 17);
-            this.checkBox1.TabIndex = 12;
-            this.checkBox1.UseVisualStyleBackColor = true;
             // 
             // Attendance
             // 

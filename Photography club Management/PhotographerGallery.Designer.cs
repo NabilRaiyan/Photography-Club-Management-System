@@ -84,7 +84,7 @@
             // 
             // pnlPhotographerGallery
             // 
-            this.pnlPhotographerGallery.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(17)))), ((int)(((byte)(42)))));
+            this.pnlPhotographerGallery.BackColor = System.Drawing.Color.White;
             this.pnlPhotographerGallery.Controls.Add(this.panel7);
             this.pnlPhotographerGallery.Controls.Add(this.panel6);
             this.pnlPhotographerGallery.Controls.Add(this.panel5);
@@ -477,7 +477,7 @@
             // lblEvents
             // 
             this.lblEvents.Font = new System.Drawing.Font("Century Gothic", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEvents.ForeColor = System.Drawing.Color.White;
+            this.lblEvents.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(16)))), ((int)(((byte)(22)))), ((int)(((byte)(58)))));
             this.lblEvents.Location = new System.Drawing.Point(470, 12);
             this.lblEvents.Name = "lblEvents";
             this.lblEvents.Size = new System.Drawing.Size(181, 34);

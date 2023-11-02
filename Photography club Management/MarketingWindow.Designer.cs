@@ -30,9 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MarketingWindow));
             this.pnlMarketingWindow = new System.Windows.Forms.Panel();
-            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
-            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
-            this.marketingHome = new Photography_club_Management.MarketingHome();
             this.btnLogout = new FontAwesome.Sharp.IconButton();
             this.btnNotifications = new FontAwesome.Sharp.IconButton();
             this.btnPaySlip = new FontAwesome.Sharp.IconButton();
@@ -49,6 +46,9 @@
             this.lblUserWelcome = new System.Windows.Forms.Label();
             this.picBoxUser = new System.Windows.Forms.PictureBox();
             this.allPost = new Photography_club_Management.AllPost();
+            this.notificationsWindow = new Photography_club_Management.notificationsWindow();
+            this.photographerEventsShow = new Photography_club_Management.PhotographerEventsShow();
+            this.marketingHome = new Photography_club_Management.MarketingHome();
             this.pnlMarketingWindow.SuspendLayout();
             this.pnlNavMenu.SuspendLayout();
             this.pnlMenu.SuspendLayout();
@@ -74,31 +74,6 @@
             this.pnlMarketingWindow.Name = "pnlMarketingWindow";
             this.pnlMarketingWindow.Size = new System.Drawing.Size(1300, 821);
             this.pnlMarketingWindow.TabIndex = 0;
-            // 
-            // notificationsWindow
-            // 
-            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(31)))), ((int)(((byte)(31)))), ((int)(((byte)(69)))));
-            this.notificationsWindow.Location = new System.Drawing.Point(667, 89);
-            this.notificationsWindow.Name = "notificationsWindow";
-            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
-            this.notificationsWindow.TabIndex = 20;
-            // 
-            // photographerEventsShow
-            // 
-            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
-            this.photographerEventsShow.Location = new System.Drawing.Point(225, 76);
-            this.photographerEventsShow.Name = "photographerEventsShow";
-            this.photographerEventsShow.Size = new System.Drawing.Size(1075, 729);
-            this.photographerEventsShow.TabIndex = 19;
-            // 
-            // marketingHome
-            // 
-            this.marketingHome.BackColor = System.Drawing.Color.White;
-            this.marketingHome.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.marketingHome.Location = new System.Drawing.Point(220, 76);
-            this.marketingHome.Name = "marketingHome";
-            this.marketingHome.Size = new System.Drawing.Size(1080, 729);
-            this.marketingHome.TabIndex = 18;
             // 
             // btnLogout
             // 
@@ -332,6 +307,31 @@
             this.allPost.Name = "allPost";
             this.allPost.Size = new System.Drawing.Size(1071, 729);
             this.allPost.TabIndex = 21;
+            // 
+            // notificationsWindow
+            // 
+            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(106)))), ((int)(((byte)(251)))));
+            this.notificationsWindow.Location = new System.Drawing.Point(667, 89);
+            this.notificationsWindow.Name = "notificationsWindow";
+            this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
+            this.notificationsWindow.TabIndex = 20;
+            // 
+            // photographerEventsShow
+            // 
+            this.photographerEventsShow.BackColor = System.Drawing.Color.White;
+            this.photographerEventsShow.Location = new System.Drawing.Point(225, 76);
+            this.photographerEventsShow.Name = "photographerEventsShow";
+            this.photographerEventsShow.Size = new System.Drawing.Size(1075, 729);
+            this.photographerEventsShow.TabIndex = 19;
+            // 
+            // marketingHome
+            // 
+            this.marketingHome.BackColor = System.Drawing.Color.White;
+            this.marketingHome.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.marketingHome.Location = new System.Drawing.Point(220, 76);
+            this.marketingHome.Name = "marketingHome";
+            this.marketingHome.Size = new System.Drawing.Size(1080, 729);
+            this.marketingHome.TabIndex = 18;
             // 
             // MarketingWindow
             // 

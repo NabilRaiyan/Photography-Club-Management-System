@@ -329,7 +329,7 @@
             // attendance
             // 
             this.attendance.BackColor = System.Drawing.Color.White;
-            this.attendance.Location = new System.Drawing.Point(220, 70);
+            this.attendance.Location = new System.Drawing.Point(223, 70);
             this.attendance.Name = "attendance";
             this.attendance.Size = new System.Drawing.Size(1087, 729);
             this.attendance.TabIndex = 17;
@@ -345,14 +345,14 @@
             // eventsWindows
             // 
             this.eventsWindows.BackColor = System.Drawing.Color.White;
-            this.eventsWindows.Location = new System.Drawing.Point(225, 70);
+            this.eventsWindows.Location = new System.Drawing.Point(223, 70);
             this.eventsWindows.Name = "eventsWindows";
             this.eventsWindows.Size = new System.Drawing.Size(1072, 729);
             this.eventsWindows.TabIndex = 15;
             // 
             // notificationsWindow
             // 
-            this.notificationsWindow.BackColor = System.Drawing.Color.SeaShell;
+            this.notificationsWindow.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(106)))), ((int)(((byte)(251)))));
             this.notificationsWindow.Location = new System.Drawing.Point(652, 88);
             this.notificationsWindow.Name = "notificationsWindow";
             this.notificationsWindow.Size = new System.Drawing.Size(600, 500);
@@ -361,7 +361,7 @@
             // eventCoordinatorHome
             // 
             this.eventCoordinatorHome.BackColor = System.Drawing.Color.White;
-            this.eventCoordinatorHome.Location = new System.Drawing.Point(220, 74);
+            this.eventCoordinatorHome.Location = new System.Drawing.Point(223, 70);
             this.eventCoordinatorHome.Name = "eventCoordinatorHome";
             this.eventCoordinatorHome.Size = new System.Drawing.Size(1077, 729);
             this.eventCoordinatorHome.TabIndex = 13;

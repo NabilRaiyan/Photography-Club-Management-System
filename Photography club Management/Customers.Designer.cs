@@ -76,9 +76,9 @@
             // pnlSearchClient
             // 
             this.pnlSearchClient.Controls.Add(this.txtSearchCustomer);
-            this.pnlSearchClient.Location = new System.Drawing.Point(6, 69);
+            this.pnlSearchClient.Location = new System.Drawing.Point(3, 72);
             this.pnlSearchClient.Name = "pnlSearchClient";
-            this.pnlSearchClient.Size = new System.Drawing.Size(711, 48);
+            this.pnlSearchClient.Size = new System.Drawing.Size(283, 48);
             this.pnlSearchClient.TabIndex = 14;
             // 
             // txtSearchCustomer
@@ -103,7 +103,7 @@
             this.txtSearchCustomer.SelectionLength = 0;
             this.txtSearchCustomer.SelectionStart = 0;
             this.txtSearchCustomer.ShortcutsEnabled = true;
-            this.txtSearchCustomer.Size = new System.Drawing.Size(709, 48);
+            this.txtSearchCustomer.Size = new System.Drawing.Size(293, 48);
             this.txtSearchCustomer.TabIndex = 13;
             this.txtSearchCustomer.TabStop = false;
             this.txtSearchCustomer.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
@@ -117,9 +117,9 @@
             this.pnlAllCustomers.Controls.Add(this.panel1);
             this.pnlAllCustomers.Controls.Add(this.pnlCustomerHeading);
             this.pnlAllCustomers.Controls.Add(this.pnlCustomer);
-            this.pnlAllCustomers.Location = new System.Drawing.Point(0, 126);
+            this.pnlAllCustomers.Location = new System.Drawing.Point(3, 129);
             this.pnlAllCustomers.Name = "pnlAllCustomers";
-            this.pnlAllCustomers.Size = new System.Drawing.Size(1080, 603);
+            this.pnlAllCustomers.Size = new System.Drawing.Size(1074, 600);
             this.pnlAllCustomers.TabIndex = 12;
             // 
             // panel1
@@ -218,7 +218,7 @@
             this.pnlCustomerHeading.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlCustomerHeading.Location = new System.Drawing.Point(0, 0);
             this.pnlCustomerHeading.Name = "pnlCustomerHeading";
-            this.pnlCustomerHeading.Size = new System.Drawing.Size(1080, 37);
+            this.pnlCustomerHeading.Size = new System.Drawing.Size(1074, 37);
             this.pnlCustomerHeading.TabIndex = 3;
             // 
             // lblClientPhoneNumberHeading
